@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --port 8000",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "pagefind": "^1.0.3",
+    "typescript": "^5.1.6",
+    "unocss": "^0.53.4",
+    "vitepress": "1.0.0-rc.20",
+    "vitepress-plugin-pagefind": "^0.2.10",
+    "windicss": "^3.5.6"
+  }
+}
