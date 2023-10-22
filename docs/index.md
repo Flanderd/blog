@@ -20,7 +20,7 @@ hero:
       text: 机器学习
       link: /my-blog/study
 
-  features:
+features:
   - title: 框架篇
     icon: 🦀
     link: /framework/react/
@@ -36,5 +36,4 @@ hero:
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
-
 ---
