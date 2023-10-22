@@ -2,7 +2,7 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: 数据分析
+title: Data Analysis
 titleTemplate: 记录数据要素
 
 hero:
