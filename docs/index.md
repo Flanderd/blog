@@ -3,12 +3,12 @@
 layout: home
 
 title: Data Analysis
-titleTemplate: 记录数据要素
+titleTemplate: 数据分析
 
 hero:
   name: "数据分析"
   text: "Data Analysis Doc"
-  tagline: 博客是你在数字世界中的声音，它让你的思想流动成字，留下深远的印记！
+  tagline: 数据分析全栈学习网站，学习原来如此简单
   image:
     src: /images/home.svg
     alt: MyBlog
