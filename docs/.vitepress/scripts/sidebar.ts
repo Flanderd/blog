@@ -11,4 +11,13 @@ export default {
         { text: "简述Mean shift 算法及其实现", link: "/my-blog/简述Mean shift 算法及其实现" },      ],
     },
   ],
+  "/data": [
+    {
+      text: "Data Analysis",
+      items: [
+        { text: "1", link: "/data" },
+        { text: "2", link: "/data" },
+        { text: "3", link: "/data" },      ],
+    },
+  ],
  } as DefaultTheme.Sidebar;
