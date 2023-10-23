@@ -28,7 +28,7 @@ features:
     details: 学习基础，轻松系统学习
   - title: 数据分析篇
     icon: 🦐
-    link: /data
+    link: /data/未命名
     linkText: 开始阅读
     details: 专栏文章，深入浅出，带你飞
   - title: 算法篇
