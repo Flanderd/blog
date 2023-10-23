@@ -23,6 +23,7 @@ hero:
 features:
   - title: 基础篇
     icon: 🦀
+    link: /my-blog/study
     linkText: 开始阅读
     details: 学习基础，轻松系统学习
   - title: 数据分析篇
