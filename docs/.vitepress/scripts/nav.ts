@@ -16,7 +16,15 @@ const nav: DefaultTheme.NavItem[] = [
   { 
     text: "数据分析",
     items:[
-      { text: "三剑客",link: "/my-blog/" },
+      {
+        text: "三剑客",
+        items:[
+          { text: "Numpy",link: "/my-blog/" },
+          { text: "Pandas",link: "/my-blog/" },
+          { text: "Matplotlib",link: "/my-blog/" }
+          
+        ]
+      },
       { text: "高等数学",link: "/my-blog/" },
       { text: "线性代数",link: "/my-blog/" },
       { text: "概率论与数理统计",link: "/my-blog/" },
