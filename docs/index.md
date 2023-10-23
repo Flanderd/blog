@@ -21,17 +21,17 @@ hero:
       link: /my-blog/study
 
 features:
-  - title: 框架篇
+  - title: 基础篇
     icon: 🦀
     link: /framework/react/
     linkText: 开始阅读
-    details: 案例在线演示，轻松系统学习
-  - title: 专栏篇
+    details: 学习基础，轻松系统学习
+  - title: 数据分析篇
     icon: 🦐
     link: /column/javascript/
     linkText: 开始阅读
     details: 专栏文章，深入浅出，带你飞
-  - title: 小记篇
+  - title: 算法篇
     icon: 🐙
     link: /note/
     linkText: 开始阅读
