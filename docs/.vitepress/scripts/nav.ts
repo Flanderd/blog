@@ -17,15 +17,18 @@ const nav: DefaultTheme.NavItem[] = [
     text: "数据分析",
     items:[
       { text: "三剑客",link: "/my-blog/" },
-      { text: "高数",link: "/my-blog/" },
-      { text: "数学",link: "/my-blog/" }
+      { text: "高等数学",link: "/my-blog/" },
+      { text: "线性代数",link: "/my-blog/" },
+      { text: "概率论与数理统计",link: "/my-blog/" },
+      { text: "统计学",link: "/my-blog/" }
     ]
   },
   { text: "机器学习",
    items:[
-      { text: "Python基础",link: "/my-blog/" },
-      { text: "统计",link: "/my-blog/" },
-      { text: "数学",link: "/my-blog/" }
+      { text: "KNN算法",link: "/my-blog/" },
+      { text: "线性回归",link: "/my-blog/" },
+      { text: "逻辑回归",link: "/my-blog/" },
+      { text: "决策树",link: "/my-blog/" }
     ]
   },
   { text: "Github",link: "/my-blog/" },
