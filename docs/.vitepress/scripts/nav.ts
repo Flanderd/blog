@@ -5,7 +5,7 @@ const nav: DefaultTheme.NavItem[] = [
   { 
     text: "基础篇",
     items:[
-      { text: "Python基础",link: "/my-blog/" },
+      { text: "Python基础",link: "/Python Base/" },
       { text: "高等数学",link: "/my-blog/" },
       { text: "线性代数",link: "/my-blog/" },
       { text: "概率论与数理统计",link: "/my-blog/" },
