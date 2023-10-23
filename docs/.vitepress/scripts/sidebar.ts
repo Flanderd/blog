@@ -8,7 +8,7 @@ export default {
       items: [
         { text: "介绍", link: "/my-blog/" },
         { text: "学习心得", link: "/my-blog/study" },
-        { text: "数据清洗", link: "/my-blog/数据清洗" },      ],
+        { text: "简述Mean shift 算法及其实现", link: "/my-blog/简述Mean shift 算法及其实现" },      ],
     },
   ],
  } as DefaultTheme.Sidebar;
