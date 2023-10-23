@@ -15,7 +15,7 @@ export default {
     {
       text: "Data Analysis",
       items: [
-        { text: "1", link: "/data/未命名" },
+        { text: "1", link: "/data/未命名/" },
         { text: "2", link: "/data/" },
         { text: "3", link: "/data/" },      ],
     },
