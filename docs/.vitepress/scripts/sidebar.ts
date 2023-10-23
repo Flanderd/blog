@@ -34,7 +34,7 @@ export default {
         { text: "While循环", link: "/data/未命名/" },
         { text: "函数", link: "/data/未命名/" },
         { text: "字符串格式化", link: "/data/" },
-        { text: "3", link: "/data/" },      ],
+     ],
     },
     {
       text: "Python文件处理",
