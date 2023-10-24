@@ -21,6 +21,16 @@ export default {
       ],
     },
   ],
+  "/python-base": [
+    {
+      text: "Python基础",
+      items: [
+        { text: "列表", link: "/python-base/" },
+        { text: "集合", link: "/python-base/" },
+        { text: "字典", link: "/python-base/" },
+      ],
+    },
+  ],
  
   
  } as DefaultTheme.Sidebar;
