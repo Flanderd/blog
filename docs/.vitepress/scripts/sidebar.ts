@@ -21,22 +21,6 @@ export default {
       ],
     },
   ],
-  "/Python-Base": [
-    {
-      text: "Python基础",
-      items: [
-        { text: "数据类型", link: "/Python-Base/" },
-        { text: "列表", link: "/Python-Base/" },
-        { text: "元组", link: "/Python-Base/ },
-        { text: "集合", link: "/Python-Base/" },
-        { text: "字典", link: "/Python-Base/" },
-        { text: "If语句", link: "/Python-Base/" },
-        { text: "For循环", link: "/Python-Base/" },
-        { text: "While循环", link: "/Python-Base/" },
-        { text: "函数", link: "/Python-Base/" },
-        { text: "字符串格式化", link: "/Python-Base/" },
-     ],
-    },
- ],
+ 
   
  } as DefaultTheme.Sidebar;
