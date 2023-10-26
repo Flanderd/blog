@@ -38,7 +38,7 @@ features:
     details: 专栏文章，深入浅出，带你飞
   - title: 算法篇
     icon:
-      src: /images/the-cow-svgrepo-com.svg
+      src: /images/penguin-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
