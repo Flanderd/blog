@@ -25,7 +25,8 @@ Learning Website
 
 features:
   - title: 基础篇
-    icon: 🦀
+    icon:
+      src:docs/public/images/crab-svgrepo-com.svg
     link: /my-blog/study
     linkText: 开始阅读
     details: 学习基础，轻松系统学习
