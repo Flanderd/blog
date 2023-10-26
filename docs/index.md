@@ -31,12 +31,14 @@ features:
     linkText: 开始阅读
     details: 学习基础，轻松系统学习
   - title: 数据分析篇
-    icon: 🦐
+    icon:
+      src：/images/fox-svgrepo-com.svg
     link: /data/未命名
     linkText: 开始阅读
     details: 专栏文章，深入浅出，带你飞
   - title: 算法篇
-    icon: 🐙
+    icon:
+      src: /images/the-cow-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
