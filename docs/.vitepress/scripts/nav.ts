@@ -4,7 +4,7 @@ import type { DefaultTheme } from "vitepress/types";
 const nav: DefaultTheme.NavItem[] = [
   { 
     text: "基础篇",
-    src: /images/sphinx-svgrepo-com.svg
+    src: /images/sphinx-svgrepo-com.svg,
     items:[
       { text: "Python基础",link: "/python-base/行业报告" },
       { text: "高等数学",link: "/my-blog/" },
