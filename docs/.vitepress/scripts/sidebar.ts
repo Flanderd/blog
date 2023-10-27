@@ -32,6 +32,16 @@ export default {
       ],
     },
   ],
+  "/visualization": [
+    {
+      text: "可视之美",
+      items: [
+        { text: "Matplotlib", link: "/python-base/" },
+        { text: "Seaborn", link: "/python-base/" },
+        { text: "Streamlit", link: "/python-base/" },
+      ],
+    },
+  ],
  
   
  } as DefaultTheme.Sidebar;
