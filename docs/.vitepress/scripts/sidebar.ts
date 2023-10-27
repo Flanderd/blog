@@ -8,7 +8,7 @@ export default {
       items: [
         { text: "介绍", link: "/my-blog/" },
         { text: "学习心得", link: "/my-blog/study" },
-        { text: "简述Mean shift 算法及其实现", link: "/my-blog/简述Mean shift 算法及其实现" },      ],
+        { text: "MathType试用期3万天!", link: "/my-blog/docs/my-blog/MathType试用期3万天！.md" },      ],
     },
   ],
   "/data": [
