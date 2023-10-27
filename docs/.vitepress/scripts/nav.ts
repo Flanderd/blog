@@ -3,7 +3,7 @@ import type { DefaultTheme } from "vitepress/types";
 // 菜单
 const nav: DefaultTheme.NavItem[] = [
   { 
-    text: "基础篇",
+    text: "🔥基础篇",
     items:[
       { text: "Python基础",link: "/python-base/行业报告" },
       { text: "高等数学",link: "/my-blog/" },
@@ -13,7 +13,7 @@ const nav: DefaultTheme.NavItem[] = [
     
     ]},
   { 
-    text: "数据分析",
+    text: "🌟数据分析",
     items:[
       {
         text: "数据分析三剑客",
@@ -37,7 +37,7 @@ const nav: DefaultTheme.NavItem[] = [
       
     ]
   },
-  { text: "机器学习",
+  { text: "✨机器学习",
    items:[
       { text: "KNN算法",link: "/my-blog/" },
       { text: "线性回归",link: "/my-blog/" },
