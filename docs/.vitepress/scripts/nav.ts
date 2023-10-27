@@ -3,8 +3,7 @@ import type { DefaultTheme } from "vitepress/types";
 // 菜单
 const nav: DefaultTheme.NavItem[] = [
   { 
-    icon:
-      src: /images/sphinx-svgrepo-com.svg,
+    icon: /images/sphinx-svgrepo-com.svg,
     text: "基础篇",
     items:[
       { text: "Python基础",link: "/python-base/行业报告" },
