@@ -3,7 +3,7 @@ import type { DefaultTheme } from "vitepress/types";
 // 菜单
 const nav: DefaultTheme.NavItem[] = [
   { 
-    text: "🪵基础篇"，
+    text: "🪵基础篇",
     items:[
       { text: "Python基础",link: "/python-base/行业报告" },
       { text: "高等数学",link: "/my-blog/" },
