@@ -30,7 +30,7 @@ features:
     link: /my-blog/study
     linkText: 开始阅读
     details: 学习基础，轻松系统学习
-  - title: 爬虫
+  - title: 爬虫之路
     icon:
       src: /images/fox-svgrepo-com.svg
     link: /data/未命名
