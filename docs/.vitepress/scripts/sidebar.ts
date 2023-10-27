@@ -36,7 +36,7 @@ export default {
     {
       text: "可视之美",
       items: [
-        { text: "Matplotlib", link: "/visualization/Book_2_Ch_02__说图__可视之美__鸢尾花书__从加减乘除到机器学习.pdf" },
+        { text: "Matplotlib", link: "/visualization/" },
         { text: "Seaborn", link: "/python-base/" },
         { text: "Streamlit", link: "/python-base/" },
       ],
