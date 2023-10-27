@@ -24,7 +24,7 @@ Learning Website
       link: /my-blog/study
 
 features:
-  - title: Python基础
+  - title: 编程基础
     icon:
       src: /images/crab-svgrepo-com.svg
     link: /my-blog/study
