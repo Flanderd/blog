@@ -7,7 +7,7 @@ titleTemplate: 数据分析
 
 hero:
   name: "数据分析"
-  text: "Data Analysis Doc
+  text: "Data Analysis
 Learning Website
 
 "
@@ -20,59 +20,59 @@ Learning Website
       text: 开始阅读
       link: /my-blog/
     - theme: alt
-      text: 机器学习
+      text: 应用实战
       link: /my-blog/study
 
 features:
-  - title: 基础篇
+  - title: Python基础
     icon:
       src: /images/crab-svgrepo-com.svg
     link: /my-blog/study
     linkText: 开始阅读
     details: 学习基础，轻松系统学习
-  - title: 数据分析篇
+  - title: 爬虫
     icon:
       src: /images/fox-svgrepo-com.svg
     link: /data/未命名
     linkText: 开始阅读
     details: 专栏文章，深入浅出，带你飞
-  - title: 算法篇
+  - title: 数学要素
     icon:
       src: /images/penguin-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
-  - title: 算法篇
+  - title: 可视之美
     icon:
       src: /images/penguin-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
-  - title: 算法篇
+  - title: 数据管理
     icon:
       src: /images/penguin-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
-  - title: 算法篇
+  - title: 统计至简
     icon:
       src: /images/penguin-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
-  - title: 算法篇
+  - title: 数据分析
     icon:
       src: /images/penguin-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
-  - title: 算法篇
+  - title: 机器学习
     icon:
       src: /images/penguin-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
-  - title: 算法篇
+  - title: 应用实战
     icon:
       src: /images/penguin-svgrepo-com.svg
     link: /note/
