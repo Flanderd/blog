@@ -45,5 +45,16 @@ const nav: DefaultTheme.NavItem[] = [
       { text: "决策树",link: "/my-blog/" }
     ]
   },
+  { 
+    text: "⛅️其他",
+    items:[
+      { text: "Python基础",link: "/python-base/行业报告" },
+      { text: "高等数学",link: "/my-blog/" },
+      { text: "线性代数",link: "/my-blog/" },
+      { text: "概率论与数理统计",link: "/my-blog/" },
+      { text: "统计学",link: "/my-blog/" }
+    
+    ]},
+
 ];
 export default nav;
