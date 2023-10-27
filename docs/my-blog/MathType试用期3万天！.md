@@ -25,12 +25,8 @@ Windows Registry Editor Version 5.00
 "wm/U/C/Y/T/Nz5/Tw="="/Wna/F/W3q/I/Yp/V\\lj/Dedai56/Ur/Wpf/P/Kpl/Soh/A/Z/Qe\\6hit3ym\\6m5sp/B/B/Q=="
 "x/W/Yrj/M/Db/Bds="="104z/W8rbqpw5\\/Qz0/C/Q/Opu/Dj/B5b/Dwsy77"
 ```
-
-1. 
-
 2. 将txt文件后缀改为reg，双击运行就行了，一共27855天，换算有76年了，怎么都够用了吧！
-
-   
-
-![屏幕截图 2023-10-25 202049](/Users/chenjs/Desktop/屏幕截图 2023-10-25 202049.png)
+<div align:center>
+<img width="297" alt="屏幕截图 2023-10-25 202049" src="https://github.com/Flanderd/blog/assets/112143058/dbdeb358-f1f6-4009-bfc1-6d6f1e41be6e">
+</div>
 
