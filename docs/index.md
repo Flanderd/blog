@@ -68,13 +68,13 @@ features:
     details: 零碎的知识点，记录在这里
   - title: 机器学习
     icon:
-      src: /images/penguin-svgrepo-com.svg
+      src: /images/polar-bear-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
   - title: 应用实战
     icon:
-      src: /images/penguin-svgrepo-com.svg
+      src: /images/whale-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
