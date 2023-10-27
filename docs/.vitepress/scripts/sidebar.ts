@@ -32,6 +32,33 @@ export default {
       ],
     },
   ],
+    "/statistics": [
+    {
+      text: "统计至简",
+      items: [
+        { text: "统计描述", link: "/statistics/2.统计描述.md" },
+        { text: "概率",
+         items:[
+          { text: "古典概率模型", link: "/statistics/3.古典概率模型.md" },
+          { text: "离散随机变量", link: "/statistics/4.离散随机变量.md" },
+           { text: "离散分布", link: "/statistics/5.离散分布.md" },
+           { text: "连续随机变量", link: "/statistics/6.连续随机变量.md" },
+           { text: "连续分布", link: "/statistics/7.连续分布.md" },
+           { text: "条件概率", link: "/statistics/8.条件概率.md" },
+          ],
+        },
+        { text: "高斯",
+         items:[
+           {text: "一元高斯分布", link: "/statistics/9.一元高斯分布.md" },
+           {text: "二元高斯分布", link: "/statistics/10.二元高斯分布.md" },
+           {text: "多元高斯分布", link: "/statistics/11.多元高斯分布.md" },
+           {text: "条件高斯分布", link: "/statistics/12.条件高斯分布.md" },
+           {text: "协方差矩阵", link: "/statistics/13.协方差矩阵.md" },
+         ],
+        },
+      ],
+    },
+  ],
   "/visualization": [
     {
       text: "可视之美",
