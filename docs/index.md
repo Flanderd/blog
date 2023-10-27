@@ -27,7 +27,7 @@ features:
   - title: 编程基础
     icon:
       src: /images/crab-svgrepo-com.svg
-    link: /my-blog/study
+    link: /python-base/数据分析.md
     linkText: 开始阅读
     details: 学习基础，轻松系统学习
   - title: 爬虫之路
