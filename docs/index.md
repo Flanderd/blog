@@ -45,7 +45,7 @@ features:
   - title: 可视之美
     icon:
       src: /images/wild-boar-svgrepo-com.svg
-    link: /visualization/Matplotlib.md
+    link: /visualization/可视之美.md
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
   - title: 数据管理
