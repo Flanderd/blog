@@ -45,7 +45,7 @@ features:
   - title: 可视之美
     icon:
       src: /images/wild-boar-svgrepo-com.svg
-    link: /visualization/Book_2_Ch_02__说图__可视之美__鸢尾花书__从加减乘除到机器学习.pdf
+    link: /visualization/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
   - title: 数据管理
