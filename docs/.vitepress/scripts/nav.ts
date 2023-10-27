@@ -45,6 +45,5 @@ const nav: DefaultTheme.NavItem[] = [
       { text: "决策树",link: "/my-blog/" }
     ]
   },
-  { text: "Github"，link: "https://github.com/Flanderd" }
 ];
 export default nav;
