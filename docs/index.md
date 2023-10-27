@@ -3,7 +3,7 @@
 layout: home
 
 title: Data Analysis
-titleTemplate: 数据分析
+titleTemplate: 全栈学习数据分析
 
 hero:
   name: "数据分析"
