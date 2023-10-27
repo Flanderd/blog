@@ -7,9 +7,9 @@ export default {
       text: "My Blog",
       items: [
         { text: "介绍", link: "/my-blog/" },
-        { text: "学习心得", link: "/my-blog/study" },
+        { text: "MatLab", link: "/my-blog/study" },
         { text: "MathType试用期3万天!", link: "/my-blog/MathType试用期3万天！.md" },
-        { text: "MathType试用期3万天!", link: "/my-blog/语雀.md" },],
+      ],
     },
   ],
   "/data": [
