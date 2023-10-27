@@ -36,7 +36,16 @@ export default {
     {
       text: "可视之美",
       items: [
-        { text: "Matplotlib", link: "/visualization/" },
+        { text: "Matplotlib",
+         items: [
+          { text: "折线图", link: "/visualization/" },
+           { text: "柱状图", link: "/visualization/" },
+           { text: "散点图", link: "/visualization/" },
+           { text: "箱形图", link: "/visualization/" },
+           { text: "三维图", link: "/visualization/" },
+           { text: "热力图", link: "/visualization/" },
+           
+           ]},
         { text: "Seaborn", link: "/python-base/" },
         { text: "Streamlit", link: "/python-base/" },
       ],
