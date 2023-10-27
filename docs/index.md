@@ -44,25 +44,25 @@ features:
     details: 零碎的知识点，记录在这里
   - title: 可视之美
     icon:
-      src: /images/penguin-svgrepo-com.svg
+      src: /images/wild-boar-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
   - title: 数据管理
     icon:
-      src: /images/penguin-svgrepo-com.svg
+      src: /images/the-cow-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
   - title: 统计至简
     icon:
-      src: /images/penguin-svgrepo-com.svg
+      src: /images/elk-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
   - title: 数据分析
     icon:
-      src: /images/penguin-svgrepo-com.svg
+      src: /images/dinosaur-svgrepo-com.svg
     link: /note/
     linkText: 开始阅读
     details: 零碎的知识点，记录在这里
