@@ -13,7 +13,7 @@ const nav: DefaultTheme.NavItem[] = [
     
     ]},
   { 
-    text: "🌟数据分析",
+    text: "🎉数据分析",
     items:[
       {
         text: "数据分析三剑客",
