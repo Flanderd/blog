@@ -7,10 +7,8 @@ titleTemplate: 全栈学习数据分析
 
 hero:
   name: "青石雨巷"
-  text: "Data Analysis</br>
-Learning Website
-
-"
+  text: "Data Analysis"
+  text: "Learning Website"
   tagline: 数据分析全栈学习网站，学习原来如此简单
   image:
     src: /images/home.svg
