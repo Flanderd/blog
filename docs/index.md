@@ -7,7 +7,7 @@ titleTemplate: 全栈学习数据分析
 
 hero:
   name: "数据分析"
-  text: "Data Analysis<br>
+  text: "Data<br> Analysis<br>
 Learning Website
 "
   tagline: 数据分析全栈学习网站，学习原来如此简单
