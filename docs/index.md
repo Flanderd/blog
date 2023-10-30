@@ -7,7 +7,7 @@ titleTemplate: 全栈学习数据分析
 
 hero:
   name: "青石雨巷"
-  text: "Data Analysis
+  text: "Data Analysis</br>
 Learning Website
 
 "
