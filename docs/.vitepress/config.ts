@@ -46,10 +46,10 @@ export default defineConfig({
     outlineTitle: "大纲",
     darkModeSwitchLabel: "外观",
     sidebarMenuLabel: "目录",
-    editLink: {
-      pattern: `${github}/blob/master/docs/:path`,
-      text: "为此页提供修改建议",
-    },
+    // editLink: {
+    //   pattern: `${github}/blob/master/docs/:path`,
+    //   text: "为此页提供修改建议",
+    // },
     socialLinks: [
       {
         icon: {
