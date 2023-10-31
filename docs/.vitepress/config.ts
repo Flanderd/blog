@@ -17,8 +17,8 @@ export default defineConfig({
   markdown: {
     lineNumbers: true,
     theme: {
-        light: "vitesse-dark",
-        dark: "vitesse-dark",
+        light: "github-dark",
+        dark: "github-light",
       },
   },
   head,
