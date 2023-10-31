@@ -15,11 +15,12 @@ export default defineConfig({
   useWebFonts: false,
   cleanUrls: false,
   markdown: {
-    lineNumbers: true,
+    
     theme: {
         light: "github-dark",
         dark: "github-light",
       },
+    lineNumbers: true,
   },
   head,
   vite: {
