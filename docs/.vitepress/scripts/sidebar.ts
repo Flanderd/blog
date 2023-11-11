@@ -78,6 +78,7 @@ export default {
       ],
     },
   ],
+  
  "/application": [
     {
       text: "应用实战",
@@ -92,7 +93,6 @@ export default {
         { text: "优秀经典案例", link: "" },
       ],
     },
-  ],
   ],
   
  } as DefaultTheme.Sidebar;
