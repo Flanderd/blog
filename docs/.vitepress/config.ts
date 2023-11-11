@@ -10,15 +10,11 @@ import nav from "./scripts/nav";
 export default defineConfig({
   title,
   description,
-  appearance: "dark",
+  appearance: "light",
   lastUpdated: true,
   useWebFonts: false,
   cleanUrls: false,
   markdown: {
-    theme: {
-      light: "github-light",
-      dark: "github-dark",
-    },
     lineNumbers: true,
   },
   head,
