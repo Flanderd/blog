@@ -82,11 +82,17 @@ export default {
     {
       text: "应用实战",
       items: [
-        { text: "每周挑战", link: "/application/" },
-        { text: "参加活动", link: "/my-blog/study" },
-        { text: "优秀经典案例", link: "/my-blog/MathType试用期3万天！.md" },
+        { text: "每周挑战", 
+        items:[
+          {text: "112-快餐店销售分析", link: "/application/应用实战篇——每周挑战112期.md" },
+          ],
+        },
+
+        { text: "参加活动", link: "" },
+        { text: "优秀经典案例", link: "" },
       ],
     },
+  ],
   ],
   
  } as DefaultTheme.Sidebar;
