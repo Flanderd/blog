@@ -78,6 +78,15 @@ export default {
       ],
     },
   ],
- 
+ "/application": [
+    {
+      text: "应用实战",
+      items: [
+        { text: "每周挑战", link: "/application/" },
+        { text: "参加活动", link: "/my-blog/study" },
+        { text: "优秀经典案例", link: "/my-blog/MathType试用期3万天！.md" },
+      ],
+    },
+  ],
   
  } as DefaultTheme.Sidebar;
