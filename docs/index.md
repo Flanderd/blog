@@ -6,7 +6,7 @@ title: Data Analysis
 titleTemplate: 全栈学习数据分析
 
 hero:
-  name: "数据分析"
+  name: "Alex Chan Doc"
   text: "Data Analysis<br>
 Learning Website
 "
