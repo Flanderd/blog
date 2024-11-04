@@ -50,13 +50,16 @@ export default {
       {
         text: 'Eli外刊精读',
         items: [
+          { text: '说明', link: 'waikan/10-12eli/首页.md' },
           { text: '10.28', link: 'waikan/10-12eli/11.1.md' },
+          { text: '11.4 The cost-of-living crisis has hurt children and prospective parents', link: 'waikan/10-12eli/11.4.md' },
           { text: '2', link: '/A/a1/a1-2' },
         ],
       },
       {
         text: '经济学人',
         items: [
+          { text: '说明', link: 'waikan/jjxr/首页.md' },
           { text: '10.28', link: 'waikan/10-12eli/11.1.md' },
           { text: '2', link: '/A/a1/a1-2' },
         ],

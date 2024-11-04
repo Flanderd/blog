@@ -11,8 +11,8 @@ const nav: DefaultTheme.NavItem[] = [
   ]},
   
   { text: '外刊精读', items:[
-    {text:'Eli精读',link: '/zhenti/2020.md'},
-    {text:'经济学人外刊',link: '/yufa/语法基础.md'},
+    {text:'Eli精读',link: '/waikan/10-12eli/首页.md'},
+    {text:'经济学人外刊',link: '/waikan/jjxr/首页.md基础.md'},
   ]},
 
 ];
