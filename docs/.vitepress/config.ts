@@ -10,7 +10,6 @@ import nav from "./scripts/nav";
 export default defineConfig({
   title,
   description,
-  appearance: "light",
   lastUpdated: true,
   useWebFonts: false,
   cleanUrls: false,
@@ -55,5 +54,9 @@ export default defineConfig({
         ariaLabel: 'cool link'
       },
       { icon: "github", link: github }],
+    // 脚注
+    footer:{
+      copyright:"Copyright@ 2024"
+    },
   },
 });
