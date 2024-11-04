@@ -1,2 +1,1 @@
-english
-知行合一
+## English Blog

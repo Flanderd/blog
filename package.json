@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs --port 8000",
+    "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs"
   },

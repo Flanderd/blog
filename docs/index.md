@@ -10,7 +10,7 @@ hero:
   text: "Learning English"
   tagline: Keep learning and Make progress
   image:
-    src: /public/images/home.svg
+    src: /home.svg
     alt: 背景图
   actions:
     - theme: brand
