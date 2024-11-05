@@ -1,14 +1,39 @@
-10，dg发  下次出差
-从vvvv
+- dictatorship		n.独裁（政府、国家）
+- privilege		n。特权		
+- the Foreign Ministry	n。外交部
+- reunion		n。团聚、聚会、团圆
+- threadbare	a。破旧的、陈腐的
+- Take off	脱掉; 起飞; （使）离开; 突然成功
+- similar to	相似于
+- are akin to	与...相似
+- in a dramatic way	
+- South Korea is blazing with light.
+- blaze	vi。熊熊燃烧	n。大火
+  - v。照耀、闪烁  blaze with 
+- striking differences引人注目的/显著的不同
+- Forged in the midst of the Korean War and against the threat of communism spreading to the south of the 38th parallel, South Korea was no democracy.
+- forge 	v。伪造、冒充	锻造、建立、
+  - forge ahead 稳步前行、稳步实施
+- secure	a。稳定的、安全的	v保护、获得、系牢
+- outlaw	v。宣布...不合法illegal	n。逃犯、亡命之徒
+- curtail	v。限制、减少
+- sphere of	n。球形、范围/领域、阶层/圈子
+  - sphere of influence势力范围
+  - the sphere of international politics. [+ of] 国际政治领域
+  - spheres of the health service. [+ of] 在公共医疗保健服务业的领域
+- except for those
+- diverge	v。分化/偏离/背离、（意见、观点等）存在分歧/相悖/相异、道路岔开/分叉
+- to say the least至少可以说
+- recurring famines重复发生的饥荒
+  - recur	v。再现、重现
+  - famine饥荒
+- exert	v。施加（影响、压力等）；行使，运用（权威等）、**exert oneself,努力、尽力**
+  - Youngsters get so absorbed that they don't realise how much they're exerting themselves. [VERB pronoun-reflexive] 年轻人如此地沉浸其中，他们没有意识到自己有多么努力
+  - Do not exert yourself unnecessarily.不要做无谓的努力。
+- repressive	a。专制的、强硬的
+- regime	n。政权
+- was inimical to 对某人有敌意/对某事物不利
+- the adoption of new technologies新技术的采用
+- crony狐朋狗友、密友
+- stagnate	v。停滞不前、没有变化
 
-fgew
-vgge
-打的我
-
-
-gfwf
-滚滚滚
-
-刚刚爸爸
-发发发
-包括开工日期
