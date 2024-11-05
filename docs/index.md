@@ -26,10 +26,10 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 
   - title: Eli精读
-    link: /composition/第一周.md
+    link: waikan/10-12eli/首页.md
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
   
   - title: 经济学人外刊
-    link: waikan/真题1 copy.md
+    link: waikan/jjxr/首页.md
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
