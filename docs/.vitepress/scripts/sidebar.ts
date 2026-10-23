@@ -2,27 +2,167 @@ import type { DefaultTheme } from "vitepress/types";
 
 // 侧边栏配置
 export default {
-  'zhenti': [
-      {
-        text: '英语二真题',
-        items: [
-          { text: '2010', link: 'zhenti/2010.md' },
-          { text: '2011', link: 'zhenti/2011.md' },
-          { text: '2012', link: 'zhenti/2012.md' },
-          { text: '2013', link: 'zhenti/2013.md' },
-          { text: '2014', link: 'zhenti/2014.md' },
-          { text: '2015', link: 'zhenti/2015.md' },
-          { text: '2016', link: 'zhenti/2016.md' },
-          { text: '2017', link: 'zhenti/2017.md' },
-          { text: '2018', link: 'zhenti/2018.md' },
-          { text: '2019', link: 'zhenti/2019.md' },
-          { text: '2020', link: 'zhenti/2020.md' },
-          { text: '2021', link: 'zhenti/2021.md' },
-          { text: '2022', link: 'zhenti/2022.md' },
-          { text: '2023', link: 'zhenti/2023.md' },
-          { text: '2024', link: 'zhenti/2024.md' },
-        ],
-      },
+  '税法': [
+      {text: '《税法一》',collapsed: true,
+          items: [
+            { text: '一、增值税', link: '/subjects/taxlaw/taxlaw1/123.md',
+                collapsed: true,
+              items:[
+                { text: '1.增值税概述', link: '/subjects/taxlaw/taxlaw1/02-01.md' },
+                { text: '2.纳税人和扣缴义务人', link: '/subjects/taxlaw/taxlaw1/02-02.md' },
+                { text: '3.征税范围', link: '/subjects/taxlaw/taxlaw1/02-03.md' },
+                { text: '4.税率和征收率', link: '/subjects/taxlaw/taxlaw1/02-04.md' },
+                { text: '5.税收优惠', link: '/subjects/taxlaw/taxlaw1/02-05.md' },
+                { text: '6.一般计税方法应纳税额计算', link: '/subjects/taxlaw/taxlaw1/02-06.md' },
+                { text: '7.简易计税方法应纳税额计算', link: '/subjects/taxlaw/taxlaw1/02-07.md' },
+                { text: '8.进口环节增值税政策', link: '/subjects/taxlaw/taxlaw1/02-08.md' },
+                { text: '9.出口业务增值税政策', link: '/subjects/taxlaw/taxlaw1/02-09.md' },
+                { text: '10.预缴税款及特定应税交易的增值税政策', link: '/subjects/taxlaw/taxlaw1/02-10.md' },
+                { text: '11.征收管理', link: '/subjects/taxlaw/taxlaw1/02-11.md' }
+              ]
+            },
+            {text: '二、消费税',
+              link: '/subjects/taxlaw/taxlaw1/123.md',
+              collapsed: true,
+            items: [
+              { text: '1.消费税概述', link: '/subjects/taxlaw/taxlaw1/03-01.md' },
+              { text: '2.纳税人和扣缴义务人', link: '/subjects/taxlaw/taxlaw1/03-02.md' },
+              { text: '3.税目和税率', link: '/subjects/taxlaw/taxlaw1/03-03.md' },
+              { text: '4.计税依据', link: '/subjects/taxlaw/taxlaw1/03-04.md' },
+              { text: '5.生产销售应税消费品应纳税额的计算', link: '/subjects/taxlaw/taxlaw1/03-05.md' },
+              { text: '6.委托加工应税消费品应纳税额的计算', link: '/subjects/taxlaw/taxlaw1/03-06.md' },
+              { text: '7.进口应税消费品应纳消费税的计算', link: '/subjects/taxlaw/taxlaw1/03-07.md' },
+              { text: '8.批发、零售环节应纳消费税的计算', link: '/subjects/taxlaw/taxlaw1/03-08.md' },
+              { text: '9.出口应税消费品的相关政策', link: '/subjects/taxlaw/taxlaw1/03-09.md' },
+              { text: '10.征收管理', link: '/subjects/taxlaw/taxlaw1/03-10.md' }
+            ]
+          },
+          {
+            text: '三、城市维护建设税',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.城市维护建设税概述', link: '/subjects/taxlaw/taxlaw1/04-01.md' },
+              { text: '2.纳税人', link: '/subjects/taxlaw/taxlaw1/04-02.md' },
+              { text: '3.征税范围', link: '/subjects/taxlaw/taxlaw1/04-03.md' },
+              { text: '4.税率', link: '/subjects/taxlaw/taxlaw1/04-04.md' },
+              { text: '5.税收优惠', link: '/subjects/taxlaw/taxlaw1/04-05.md' },
+              { text: '6.计税依据', link: '/subjects/taxlaw/taxlaw1/04-06.md' },
+              { text: '7.应纳税额的计算', link: '/subjects/taxlaw/taxlaw1/04-07.md' },
+              { text: '8.征收管理', link: '/subjects/taxlaw/taxlaw1/04-08.md' }
+            ]
+          },
+          {
+            text: '四、土地增值税',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.土地增值税概述', link: '/subjects/taxlaw/taxlaw1/05-01.md' },
+              { text: '2.纳税人', link: '/subjects/taxlaw/taxlaw1/05-02.md' },
+              { text: '3.征税范围和税率', link: '/subjects/taxlaw/taxlaw1/05-03.md' },
+              { text: '4.计税依据', link: '/subjects/taxlaw/taxlaw1/05-04.md' },
+              { text: '5.税收优惠', link: '/subjects/taxlaw/taxlaw1/05-05.md' },
+              { text: '6.应纳税额的计算', link: '/subjects/taxlaw/taxlaw1/05-06.md' },
+              { text: '7.房地产开发企业土地增值税清算', link: '/subjects/taxlaw/taxlaw1/05-07.md' },
+              { text: '8.征收管理', link: '/subjects/taxlaw/taxlaw1/05-08.md' }
+            ]
+          },
+          {
+            text: '五、资源税',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.资源税概述', link: '/subjects/taxlaw/taxlaw1/06-01.md' },
+              { text: '2.纳税人', link: '/subjects/taxlaw/taxlaw1/06-02.md' },
+              { text: '3.税目和税率', link: '/subjects/taxlaw/taxlaw1/06-03.md' },
+              { text: '4.税收优惠', link: '/subjects/taxlaw/taxlaw1/06-04.md' },
+              { text: '5.计税依据和应纳税额的计算', link: '/subjects/taxlaw/taxlaw1/06-05.md' },
+              { text: '6.征收管理', link: '/subjects/taxlaw/taxlaw1/06-06.md' },
+              { text: '7.水资源税', link: '/subjects/taxlaw/taxlaw1/06-07.md' }
+            ]
+          },
+          {
+            text: '六、车辆购置税',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.车辆购置税概述', link: '/subjects/taxlaw/taxlaw1/07-01.md' },
+              { text: '2.纳税人', link: '/subjects/taxlaw/taxlaw1/07-02.md' },
+              { text: '3.征税范围和税率', link: '/subjects/taxlaw/taxlaw1/07-03.md' },
+              { text: '4.税收优惠', link: '/subjects/taxlaw/taxlaw1/07-04.md' },
+              { text: '5.计税依据', link: '/subjects/taxlaw/taxlaw1/07-05.md' },
+              { text: '6.应纳税额的计算', link: '/subjects/taxlaw/taxlaw1/07-06.md' },
+              { text: '7.征收管理', link: '/subjects/taxlaw/taxlaw1/07-07.md' }
+            ]
+          },
+          {
+            text: '七、环境保护税',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.环境保护税概述', link: '/subjects/taxlaw/taxlaw1/08-01.md' },
+              { text: '2.纳税人和征税对象', link: '/subjects/taxlaw/taxlaw1/08-02.md' },
+              { text: '3.税目和税率', link: '/subjects/taxlaw/taxlaw1/08-03.md' },
+              { text: '4.税收优惠', link: '/subjects/taxlaw/taxlaw1/08-04.md' },
+              { text: '5.计税依据与应纳税额计算', link: '/subjects/taxlaw/taxlaw1/08-05.md' },
+              { text: '6.征收管理', link: '/subjects/taxlaw/taxlaw1/08-06.md' }
+            ]
+          },
+          {
+            text: '八、烟叶税',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.烟叶税概述', link: '/subjects/taxlaw/taxlaw1/09-01.md' },
+              { text: '2.纳税人', link: '/subjects/taxlaw/taxlaw1/09-02.md' },
+              { text: '3.征税对象和税率', link: '/subjects/taxlaw/taxlaw1/09-03.md' },
+              { text: '4.计税依据', link: '/subjects/taxlaw/taxlaw1/09-04.md' },
+              { text: '5.应纳税额的计算', link: '/subjects/taxlaw/taxlaw1/09-05.md' },
+              { text: '6.征收管理', link: '/subjects/taxlaw/taxlaw1/09-06.md' }
+            ]
+          },
+          {
+            text: '九、关税',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.关税概述', link: '/subjects/taxlaw/taxlaw1/10-01.md' },
+              { text: '2.纳税人、扣缴义务人和征税对象', link: '/subjects/taxlaw/taxlaw1/10-02.md' },
+              { text: '3.税率及税率适用', link: '/subjects/taxlaw/taxlaw1/10-03.md' },
+              { text: '4.计税价格', link: '/subjects/taxlaw/taxlaw1/10-04.md' },
+              { text: '5.应纳税额计算', link: '/subjects/taxlaw/taxlaw1/10-05.md' },
+              { text: '6.税收优惠', link: '/subjects/taxlaw/taxlaw1/10-06.md' },
+              { text: '7.征收管理', link: '/subjects/taxlaw/taxlaw1/10-07.md' }
+            ]
+          },
+          {
+            text: '十、社会保险费',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.社会保险费概述', link: '/subjects/taxlaw/taxlaw1/11-01.md' },
+              { text: '2.基本养老保险费', link: '/subjects/taxlaw/taxlaw1/11-02.md' },
+              { text: '3.基本医疗保险费和生育保险费', link: '/subjects/taxlaw/taxlaw1/11-03.md' },
+              { text: '4.工伤保险费和职业伤害保障费', link: '/subjects/taxlaw/taxlaw1/11-04.md' },
+              { text: '5.失业保险费', link: '/subjects/taxlaw/taxlaw1/11-05.md' },
+              { text: '6.社会保险费征缴', link: '/subjects/taxlaw/taxlaw1/11-06.md' }
+            ]
+          },
+          {
+            text: '十一、非税收入',
+            link: '/subjects/taxlaw/taxlaw1/123.md',
+            collapsed: true,
+            items: [
+              { text: '1.非税收入概述', link: '/subjects/taxlaw/taxlaw1/12-01.md' },
+              { text: '2.行政事业性收费', link: '/subjects/taxlaw/taxlaw1/12-02.md' },
+              { text: '3.政府性基金', link: '/subjects/taxlaw/taxlaw1/12-03.md' },
+              { text: '4.国有资源(资产)有偿使用收入', link: '/subjects/taxlaw/taxlaw1/12-04.md' },
+              { text: '5.其他类别的非税收入', link: '/subjects/taxlaw/taxlaw1/12-05.md' }
+            ]
+          },
+          ]
+        },
+      
       {
         text: '英语一真题',
         items: [
