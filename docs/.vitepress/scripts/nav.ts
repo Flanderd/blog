@@ -23,7 +23,7 @@ const nav: DefaultTheme.NavItem[] = [
   { text: 'Economy', 
     items:[
     {text:'宏观经济学',link: '/waikan/10-12eli/首页.md'},
-    {text:'微观经济学',link: '/waikan/jjxr/首页.md基础.md'},
+    {text:'金融学',link: '/waikan/jjxr/首页.md基础.md'},
   ]},
   { text: 'Math', 
     items:[
