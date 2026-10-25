@@ -10,7 +10,7 @@ import nav from "./scripts/nav";
 export default defineConfig({
   title,
   description,
-  lastUpdated: true,
+  /* lastUpdated: true, */
   useWebFonts: false,
   cleanUrls: false,
   markdown: {
@@ -33,7 +33,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav,
     logo: "/logo.svg",
-    lastUpdatedText: "最后一次更新于",
+    /* lastUpdatedText: "最后一次更新于", */
     outline: "deep",
     docFooter: {
       prev: "上一篇",
