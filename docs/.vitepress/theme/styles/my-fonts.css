@@ -1,0 +1,157 @@
+/* .vitepress/theme/my-fonts.css */
+:root {
+  --vp-font-family-base: /* 普通文本字体 */
+  --vp-font-family-mono: /* 代码字体 */
+}
+
+body {
+  font-size: 14px;
+}
+
+.vp-doc h1 {
+  font-family: 'FZXiaoBiaoSong-B05S', '方正小标宋简体', '方正小标宋_GBK',
+    'STZhongsong', 'SimSun', serif;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  /* 覆盖默认主题宽屏下 h1 放大到 32px 的规则 */
+  .vp-doc h1 {
+    font-size: 24px;
+  }
+}
+
+.vp-doc h2 {
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.vp-doc h2:first-of-type {
+  margin-top: 20px;
+}
+
+.vp-doc h3 {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.vp-doc h4 {
+  font-size: 16px;
+}
+
+.vp-doc h5,
+.vp-doc h6 {
+  font-size: 15px;
+}
+
+.vp-doc p {
+  line-height: 1.85;
+}
+
+/* ---------- 引用块：左侧内嵌颜色条 + 仿宋 ---------- */
+/**
+ * 默认样式是 2px 灰色分隔线 + 灰色文字；
+ * 这里改为「内嵌圆角颜色条」（::before 伪元素，品牌色渐变），
+ * 文字颜色与正文一致，字体使用仿宋。
+ */
+.vp-doc blockquote {
+  position: relative;
+  margin: 18px 0;
+  padding: 4px 18px 4px 24px;
+  border-left: none;
+  color: var(--vp-c-text-1);
+  font-family: 'FangSong', 'STFangsong', 'FangSong_GB2312', '仿宋', serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.vp-doc blockquote::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  background: var(--vp-c-brand-soft);
+  /* 不支持 color-mix 的旧浏览器沿用上面 soft 色，同样偏淡 */
+  background: color-mix(in srgb, var(--vp-c-brand-2) 45%, transparent);
+}
+/* 引用块里的强调文字保持加粗但回到正文色，避免仿宋加粗发糊 */
+.vp-doc blockquote strong {
+  color: var(--vp-c-text-1);
+}
+
+/* ---------- Callout 提示容器：楷体 + 颜色与背景淡化 ---------- */
+/**
+ * 通过覆盖 --vp-custom-block-* 变量实现，深浅模式自动适配。
+ * 文字色保持主题默认的强调色不变；背景 = 原 soft 色再掺透明度减淡；
+ * 边框 = 各类型最深一档的强调色描边。
+ * 先写一条普通值作兜底，不支持 color-mix 的旧浏览器会沿用默认样式。
+ */
+:root {
+  /* 背景整体减淡（约打对折） */
+  --vp-custom-block-tip-bg: var(--vp-c-tip-soft);
+  --vp-custom-block-tip-bg: color-mix(in srgb, var(--vp-c-tip-soft) 55%, transparent);
+  --vp-custom-block-tip-code-bg: var(--vp-custom-block-tip-bg);
+
+  --vp-custom-block-info-bg: var(--vp-c-default-soft);
+  --vp-custom-block-info-bg: color-mix(in srgb, var(--vp-c-default-soft) 55%, transparent);
+  --vp-custom-block-info-code-bg: var(--vp-custom-block-info-bg);
+
+  --vp-custom-block-note-bg: var(--vp-c-default-soft);
+  --vp-custom-block-note-bg: color-mix(in srgb, var(--vp-c-default-soft) 55%, transparent);
+  --vp-custom-block-note-code-bg: var(--vp-custom-block-note-bg);
+
+  --vp-custom-block-warning-bg: var(--vp-c-warning-soft);
+  --vp-custom-block-warning-bg: color-mix(in srgb, var(--vp-c-warning-soft) 55%, transparent);
+  --vp-custom-block-warning-code-bg: var(--vp-custom-block-warning-bg);
+
+  --vp-custom-block-danger-bg: var(--vp-c-danger-soft);
+  --vp-custom-block-danger-bg: color-mix(in srgb, var(--vp-c-danger-soft) 55%, transparent);
+  --vp-custom-block-danger-code-bg: var(--vp-custom-block-danger-bg);
+
+  --vp-custom-block-caution-bg: var(--vp-c-caution-soft);
+  --vp-custom-block-caution-bg: color-mix(in srgb, var(--vp-c-caution-soft) 55%, transparent);
+  --vp-custom-block-caution-code-bg: var(--vp-custom-block-caution-bg);
+
+  --vp-custom-block-important-bg: var(--vp-c-important-soft);
+  --vp-custom-block-important-bg: color-mix(in srgb, var(--vp-c-important-soft) 55%, transparent);
+  --vp-custom-block-important-code-bg: var(--vp-custom-block-important-bg);
+
+  /* 边框：强调色掺透明度，浅淡描边不压文字；随主题色板与深浅模式自动变化 */
+  --vp-custom-block-tip-border: var(--vp-c-tip-3);
+  --vp-custom-block-tip-border: color-mix(in srgb, var(--vp-c-tip-1) 38%, transparent);
+  --vp-custom-block-info-border: var(--vp-c-default-3);
+  --vp-custom-block-info-border: color-mix(in srgb, var(--vp-c-default-1) 38%, transparent);
+  --vp-custom-block-note-border: var(--vp-c-default-3);
+  --vp-custom-block-note-border: color-mix(in srgb, var(--vp-c-default-1) 38%, transparent);
+  --vp-custom-block-warning-border: var(--vp-c-warning-3);
+  --vp-custom-block-warning-border: color-mix(in srgb, var(--vp-c-warning-1) 38%, transparent);
+  --vp-custom-block-danger-border: var(--vp-c-danger-3);
+  --vp-custom-block-danger-border: color-mix(in srgb, var(--vp-c-danger-1) 38%, transparent);
+  --vp-custom-block-caution-border: var(--vp-c-caution-3);
+  --vp-custom-block-caution-border: color-mix(in srgb, var(--vp-c-caution-1) 38%, transparent);
+  --vp-custom-block-important-border: var(--vp-c-important-3);
+  --vp-custom-block-important-border: color-mix(in srgb, var(--vp-c-important-1) 38%, transparent);
+}
+
+.vp-doc .custom-block {
+  font-family: 'Kaiti SC', 'STKaiti', 'KaiTi', 'KaiTi_GB2312', '楷体', serif;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+/* 标题与正文同为楷体，标题保持加粗并沿用各类型默认强调色 */
+.vp-doc .custom-block .custom-block-title {
+  color: inherit;
+}
+
+/* callout 内的行内代码保持等宽字体，避免被楷体覆盖观感 */
+.vp-doc .custom-block code {
+  font-family: var(--vp-font-family-mono);
+}

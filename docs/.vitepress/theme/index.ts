@@ -7,6 +7,10 @@ import "./styles/rainbow.css";
 import "./styles/vars.css";
 import "./styles/global.css";
 
+import DefaultTheme from 'vitepress/theme-without-fonts'
+import './styles/my-fonts.css';
+
+
 let pageStyle: HTMLStyleElement | undefined;
 
 function updatePageStyle(value: boolean) {
@@ -16,7 +20,7 @@ function updatePageStyle(value: boolean) {
     pageStyle = document.createElement("style");
     pageStyle.innerHTML = `
     :root {
-      animation: rainbow 40s linear infinite;
+      animation: rainbow 60s linear infinite;/* 调节首页渐变色速度 */
     }`;
     document.body.appendChild(pageStyle);
   } else {

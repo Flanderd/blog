@@ -10,6 +10,7 @@ export default {
           { text: '一、增值税★★★',
             collapsed: true,
               items:[
+                { text: '0.本章导读', link: '/taxlaw/税法一/01 增值税/0.本章导读.md' },
                 { text: '1.增值税概述', link: '/taxlaw/税法一/01 增值税/1.增值税概述.md' },
                 { text: '2.纳税人和扣缴义务人', link: '/taxlaw/税法一/01 增值税/2.纳税人和扣缴义务人.md' },
                 { text: '3.征税范围', link: '/taxlaw/税法一/01 增值税/3.征税范围.md' },
@@ -23,7 +24,7 @@ export default {
                 { text: '11.征收管理', link: '/taxlaw/税法一/01 增值税/11.征收管理.md' }
               ]
           },
-          {text: '二、消费税',
+          {text: '二、消费税★★',
             collapsed: true,
             items: [
               { text: '1.消费税概述', link: '/taxlaw/税法一/02 消费税/1.消费税概述.md' },
