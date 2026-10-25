@@ -210,3 +210,24 @@ body {
 .vp-doc td {
   text-align: center;
 }
+
+/* ---------- 数学公式：超宽时在容器内横向滚动 ---------- */
+/**
+ * MathJax 的块级公式是一张固定宽度的 SVG，宽度超过正文栏就会溢出。
+ * 这里让公式容器自己滚动，而不是把整页撑开：
+ * - svg 改成 display:block + margin auto：放得下时居中，放不下时自动靠左，
+ *   避免行内居中在溢出状态下把左边内容裁掉（滚不到）；
+ * - overflow-y: hidden 只留横向滚动条，不出现竖向滚动条。
+ */
+.vp-doc mjx-container[display='true'] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;
+}
+
+.vp-doc mjx-container[display='true'] > svg {
+  display: block;
+  margin: 0 auto;
+}
