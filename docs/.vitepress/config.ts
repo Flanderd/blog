@@ -15,6 +15,8 @@ export default defineConfig({
   cleanUrls: false,
   markdown: {
     lineNumbers: true,
+    // 数学公式：$$...$$ 块级 / $...$ 行内，构建时由 markdown-it-mathjax3 渲染为 SVG
+    math: true,
   },
   head,
   vite: {

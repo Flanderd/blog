@@ -14,6 +14,17 @@ const head: HeadConfig[] = [
   ],
   ["link", { rel: "shortcut icon", href: "/logo.svg" }],
   ["link", { rel: "icon", type: "image/x-icon", href: "/logo.svg" }],
+  // 标题字体子集（方正小标宋），提前加载，避免标题先闪一下回退字体
+  [
+    "link",
+    {
+      rel: "preload",
+      href: "/fonts/fzxbs-subset.woff2",
+      as: "font",
+      type: "font/woff2",
+      crossorigin: "",
+    },
+  ],
   // webfont
   ["link", { rel: "dns-prefetch", href: "https://fonts.googleapis.com" }],
   ["link", { rel: "dns-prefetch", href: "https://fonts.gstatic.com" }],

@@ -1,7 +1,27 @@
 /* .vitepress/theme/my-fonts.css */
+/**
+ * 标题字体：方正小标宋。
+ * 字体文件只存在于本机，其他设备没有，所以把子集化后的 woff2 随站点一起发布。
+ * 子集只包含全部 h1~h3 标题用到的字，约 72KB；标题新增生僻字后跑 `npm run font:subset` 重新生成。
+ */
+@font-face {
+  font-family: 'FZXiaoBiaoSong-Subset';
+  src: url('/fonts/fzxbs-subset.woff2') format('woff2');
+  font-display: swap;
+}
+
 :root {
-  --vp-font-family-base: /* 普通文本字体 */
-  --vp-font-family-mono: /* 代码字体 */
+  /* 普通文本字体（原来是空值，等于没指定；这里给出跨平台字体栈，按需自行替换） */
+  --vp-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue',
+    Arial, sans-serif;
+  --vp-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Consolas,
+    'Liberation Mono', monospace;
+
+  /* 标题字体：子集 woff2 优先，拿不到再回退到本机安装的同名字体 */
+  --font-heading: 'FZXiaoBiaoSong-Subset', 'FZXiaoBiaoSong-B05S',
+    '方正小标宋简体', '方正小标宋_GBK', 'STZhongsong', 'Songti SC',
+    'Noto Serif CJK SC', 'Noto Serif SC', 'SimSun', serif;
 }
 
 body {
@@ -9,8 +29,7 @@ body {
 }
 
 .vp-doc h1 {
-  font-family: 'FZXiaoBiaoSong-B05S', '方正小标宋简体', '方正小标宋_GBK',
-    'STZhongsong', 'SimSun', serif;
+  font-family: var(--font-heading);
   font-size: 24px;
   line-height: 30px;
   letter-spacing: 0.02em;
@@ -24,34 +43,49 @@ body {
 }
 
 .vp-doc h2 {
+  font-family: var(--font-heading);
   margin-top: 36px;
   padding-top: 20px;
   border-top: 1px solid var(--vp-c-divider);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 28px;
+  text-align: center;
 }
 
 .vp-doc h2:first-of-type {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .vp-doc h3 {
-  font-size: 17px;
-  line-height: 26px;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  line-height: 10px;
+
 }
 
 .vp-doc h4 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .vp-doc h5,
 .vp-doc h6 {
-  font-size: 15px;
+  font-size: 14px;
 }
 
+/* 正文修改样式 */
 .vp-doc p {
-  line-height: 1.85;
+  line-height: 1.5;
+  /* text-indent: 2em; */ /* 首行缩进两个汉字 */
+  margin: 10px 0; /* 上下各 20px */
 }
+/* 这些引用块、Callout、列表、表格地方的段落不要首行缩进 */
+/* .vp-doc blockquote p,
+.vp-doc .custom-block p,
+.vp-doc li p,
+.vp-doc td p,
+.vp-doc th p {
+  text-indent: 0;
+} */
 
 /* ---------- 引用块：左侧内嵌颜色条 + 仿宋 ---------- */
 /**
@@ -143,7 +177,8 @@ body {
 .vp-doc .custom-block {
   font-family: 'Kaiti SC', 'STKaiti', 'KaiTi', 'KaiTi_GB2312', '楷体', serif;
   font-size: 14px;
-  line-height: 1.85;
+  line-height: 1.5;
+  
 }
 
 /* 标题与正文同为楷体，标题保持加粗并沿用各类型默认强调色 */
@@ -154,4 +189,24 @@ body {
 /* callout 内的行内代码保持等宽字体，避免被楷体覆盖观感 */
 .vp-doc .custom-block code {
   font-family: var(--vp-font-family-mono);
+}
+
+
+/* ---------- 表格：在页面中水平居中 ---------- */
+/**
+ * 默认主题的 .vp-doc table 是 display: block 全宽拉伸；
+ * 这里收缩到内容宽度并左右 auto 外边距实现居中，
+ * 超宽表格仍保留 overflow-x 横向滚动能力。
+ */
+.vp-doc table {
+  width: fit-content;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 表头与单元格文字也一并居中，视觉上更整齐 */
+.vp-doc th,
+.vp-doc td {
+  text-align: center;
 }

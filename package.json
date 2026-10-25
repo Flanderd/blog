@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "font:subset": "bash scripts/subset-heading-font.sh"
   },
   "dependencies": {
     "pagefind": "^1.0.3",
@@ -15,5 +16,8 @@
   },
   "engines": {
     "node": "24.1"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2"
   }
 }
