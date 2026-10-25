@@ -1,0 +1,29 @@
+{
+  "text-color-toolbar:color-red": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "1"
+    }
+  ],
+  "text-color-toolbar:color-blue": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "2"
+    }
+  ],
+  "text-color-toolbar:color-green": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "3"
+    }
+  ]
+}

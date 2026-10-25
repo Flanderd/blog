@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "taxlaw/税法一/01 增值税/2.纳税人和扣缴义务人.md",
+                "file": "taxlaw/税法一/01 增值税/1.增值税概述.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2.纳税人和扣缴义务人"
+              "title": "1.增值税概述"
             }
           }
         ]
@@ -179,6 +179,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "text-color-toolbar:文字颜色": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -189,5 +190,9 @@
     }
   },
   "active": "c00277cc4b7ab49b",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "taxlaw/税法一/01 增值税/0.本章导读.md",
+    "taxlaw/税法一/01 增值税/1.增值税概述.md",
+    "taxlaw/税法一/01 增值税/2.纳税人和扣缴义务人.md"
+  ]
 }

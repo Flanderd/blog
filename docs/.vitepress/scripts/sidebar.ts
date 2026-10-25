@@ -3,7 +3,7 @@ import type { DefaultTheme } from "vitepress/types";
 // 侧边栏配置
 export default {
   'taxlaw': [
-    {text:'概述',link:'/taxlaw1/0.概述.md'},
+    {text:'概述',link:'/taxlaw/概述.md'},
     {text: '《税法一》',
         collapsed: true,
         items: [

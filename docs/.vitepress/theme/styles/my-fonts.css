@@ -82,7 +82,7 @@ body {
   border-top: 1px solid var(--vp-c-divider);
   font-size: 20px;
   line-height: 28px;
-  text-align: center;
+  text-align: left;
 }
 
 .vp-doc h2:first-of-type {
@@ -205,6 +205,29 @@ body {
   --vp-custom-block-important-border: var(--vp-c-important-3);
   --vp-custom-block-important-border: color-mix(in srgb, var(--vp-c-important-1) 38%, transparent);
 }
+/* ---------- Callout 边框开关 ---------- */
+/**
+ * 背景色继续沿用上面的 --vp-custom-block-*-bg（含 color-mix 的淡色），这里不动。
+ * 边框统一由下面三个变量控制，改一行就能全站开关：
+ *   --callout-border-width: 0px    → 所有 callout 去掉边框
+ *   --callout-border-width: 1px    → 恢复（默认）
+ *   --callout-border-style: dashed → 换成虚线
+ *   --callout-radius: 0px          → 去掉圆角
+ * 只想给某一类单独去掉边框，在那个类型上覆盖即可：
+ *   .vp-doc .custom-block.tip { border-width: 0; }
+ */
+:root {
+  --callout-border-width: 0px;
+  --callout-border-style: solid;
+  --callout-radius: 6px;
+}
+
+.vp-doc .custom-block {
+  border-width: var(--callout-border-width);
+  border-style: var(--callout-border-style);
+  border-radius: var(--callout-radius);
+}
+
 /* callout字体颜色 */
 :root {
   --vp-custom-block-tip-text: var(--vp-c-text-1);
@@ -282,3 +305,90 @@ body {
 /* 想给有序、无序分别用不同颜色，解开下面两行（会覆盖上面那条） */
 /* .vp-doc ol > li::marker { color: var(--vp-c-brand-1); } */
 /* .vp-doc ul > li::marker { color: var(--vp-c-brand-2); } */
+
+/* ---------- 文字颜色工具类 ---------- */
+/**
+ * 用法：<span class="text-red">重点</span>
+ * 都定义了深色模式的对应值，避免浅色数值在暗色背景上看不清。
+ * 想加新颜色，照这个格式再加一条 .text-xxx 即可。
+ */
+.vp-doc .text-brand { color: var(--vp-c-brand-1); }
+.vp-doc .text-red { color: #cf222e; }
+.vp-doc .text-orange { color: #bc4c00; }
+.vp-doc .text-green { color: #1a7f37; }
+.vp-doc .text-blue { color: #0969da; }
+.vp-doc .text-purple { color: #8250df; }
+.vp-doc .text-muted { color: var(--vp-c-text-2); }
+
+.dark .vp-doc .text-red { color: #ff7b72; }
+.dark .vp-doc .text-orange { color: #f0883e; }
+.dark .vp-doc .text-green { color: #7ee787; }
+.dark .vp-doc .text-blue { color: #79c0ff; }
+.dark .vp-doc .text-purple { color: #d2a8ff; }
+
+/* ---------- 列表缩进 ---------- */
+/**
+ * VitePress 默认给 ul/ol 的是 padding-left: 1.25rem，
+ * 但 global.css 把 html 的字号改成了 4px（1rem = 4px），
+ * 于是这个内边距只剩 5px，数字和圆点会甩到正文左边界之外。
+ * 这里改用 em（跟随正文字号），不再受根字号影响。
+ */
+.vp-doc ul,
+.vp-doc ol {
+  padding-left: 1.6em;
+}
+
+/* 嵌套列表缩进同样跟随字号，避免每层只缩进几像素 */
+.vp-doc li > ul,
+.vp-doc li > ol {
+  padding-left: 1.4em;
+}
+
+/* ---------- 嵌套有序列表的编号样式 ---------- */
+/**
+ * 一级：1. 2. 3.
+ * 二级：（1）（2）（3）
+ * 三级：a. b. c.
+ * （1）这类全角括号比 "1." 宽，所以二级单独加大 padding-left，
+ * 否则编号会顶到上一级文字里。
+ */
+@counter-style paren-number {
+  system: extends decimal;
+  prefix: '(';
+  suffix: ').';
+}
+
+/* 有序列表ol1-4层级样式 */
+.vp-doc ol {
+  list-style-type: decimal;
+}
+
+.vp-doc ol ol {
+  list-style-type: paren-number;
+  padding-left: 2.2em;
+}
+
+.vp-doc ol ol ol {
+  list-style-type: upper-alpha;
+  padding-left: 1.6em;
+}
+.vp-doc ol ol ol ol {
+  list-style-type: lower-alpha;
+  padding-left: 1.6em;
+}
+
+/* ---------- 嵌套无序列表的标记样式 ---------- */
+/**
+ * 一级：实心圆（disc）
+ * 二级：空心圆（circle）
+ * 需要三级方块的话把最后一行注释解开。
+ */
+.vp-doc ul {
+  list-style-type: disc;
+}
+
+.vp-doc ul ul {
+  list-style-type: circle;
+}
+
+/* .vp-doc ul ul ul { list-style-type: square; } */

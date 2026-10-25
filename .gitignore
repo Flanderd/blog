@@ -21,3 +21,5 @@ pnpm-debug.log*
 
 # json
 meta.json
+
+docs/.obsidian/plugins/
