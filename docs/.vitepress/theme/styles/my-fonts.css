@@ -74,9 +74,9 @@ body {
 
 /* 正文修改样式 */
 .vp-doc p {
-  line-height: 1.5;
+  line-height: 1.8;
   /* text-indent: 2em; */ /* 首行缩进两个汉字 */
-  margin: 10px 0; /* 上下各 20px */
+  margin: 10px 0; /* 上下各 10px */
 }
 /* 这些引用块、Callout、列表、表格地方的段落不要首行缩进 */
 /* .vp-doc blockquote p,

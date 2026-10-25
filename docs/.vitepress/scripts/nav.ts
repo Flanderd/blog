@@ -2,11 +2,9 @@ import type { DefaultTheme } from "vitepress/types";
 
 // 菜单
 const nav: DefaultTheme.NavItem[] = [
-
-  { text: 'Home', link: '/' },
   {text: '税务',
     items:[
-    {text:'《税法一》',link: '/taxlaw/概述.md'},
+    {text:'《税法一》',link: '/taxlaw/税法一/01 增值税/0.本章导读.md'},
     {text:'《税法二》',link: '/yufa/语法基础.md'},
     {text:'《涉税实务》',link: '/composition/第一周 主语从句.md'},
     {text:'《财务与会计》',link: '/yufa/语法基础.md'},
