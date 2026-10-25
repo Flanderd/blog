@@ -4,7 +4,7 @@
     "dev": "vitepress dev docs",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
-    "font:subset": "bash scripts/subset-heading-font.sh"
+    "font:subset": "bash scripts/subset-fonts.sh"
   },
   "dependencies": {
     "pagefind": "^1.0.3",

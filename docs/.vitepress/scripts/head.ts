@@ -25,6 +25,8 @@ const head: HeadConfig[] = [
       crossorigin: "",
     },
   ],
+  // Callout 楷体、引用块仿宋体积较大（~850KB / ~550KB），不做全局预加载，
+  // 只在页面真正用到对应元素时才下载。
   // webfont
   ["link", { rel: "dns-prefetch", href: "https://fonts.googleapis.com" }],
   ["link", { rel: "dns-prefetch", href: "https://fonts.gstatic.com" }],

@@ -1,0 +1,80 @@
+/* .vitepress/theme/styles/blur.css */
+
+/* ---------- 导航栏毛玻璃：模糊由上到下渐隐 ---------- */
+/**
+ * 思路：模糊交给 .VPNavBar::before 承担，再用 mask 做从上到下的渐隐。
+ * 这样导航文字所在的那 64px 始终是完全模糊的（保证可读），
+ * 过渡带放在导航下方多出来的 24px 里，避免出现一条有硬边的毛玻璃横条。
+ */
+
+/* 1. 导航本体：去掉底色、边框和自带的均匀模糊 */
+.VPNavBar {
+  background-color: transparent !important;
+  border-bottom-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  /* 让 ::before 的 z-index: -1 待在这一层里，既盖住正文又不压住导航内容 */
+  isolation: isolate;
+}
+
+/* 导航内部的两块底色置空，否则会盖住模糊层 */
+.VPNavBar .content-body,
+.VPNavBar:not(.has-sidebar):not(.top) {
+  background-color: transparent !important;
+}
+
+/* 2. 渐变模糊层：高度 = 导航高度 + 24px 过渡带 */
+.VPNavBar::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 -40px;
+  z-index: -1;
+  pointer-events: none;
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  /* 顶部 40px 全模糊，往下 64px 渐隐到完全清晰（渐变带跨过导航底部） */
+  mask-image: linear-gradient(to bottom, #000 40px, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 40px, transparent 100%);
+}
+
+/* 页面在顶部时导航本来就该透出背景，不加模糊 */
+.VPNavBar.top::before {
+  display: none;
+}
+
+/* 3. 导航下方那条 .curtain：加 blur 会变成硬边横条，直接隐藏 */
+.VPNavBar .curtain {
+  display: none;
+}
+
+/* ---------- 以下为原有效果，保留 ---------- */
+
+/* 首页特性卡片 */
+.VPFeature {
+  border: none;
+  box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+  background-color: transparent;
+}
+
+/* 搜索框 */
+.DocSearch-Button {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+}
+
+@media (min-width: 768px) {
+  .DocSearch-Button {
+    border: 1px solid var(--vp-c-gray-1);
+  }
+}
+
+.NavBarHiddenLeftAside {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+}
+
+/* 移动端大纲栏 */
+.VPLocalNav {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+}

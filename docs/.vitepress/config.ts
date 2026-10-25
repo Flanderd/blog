@@ -17,6 +17,24 @@ export default defineConfig({
     lineNumbers: true,
     // 数学公式：$$...$$ 块级 / $...$ 行内，构建时由 markdown-it-mathjax3 渲染为 SVG
     math: true,
+    /**
+     * 不写标题的 ::: tip / ::: info / ::: warning / ::: danger 不再显示默认的
+     * TIP / INFO / WARNING / DANGER 标题，直接显示内容。
+     * 写了标题的（::: tip 提示）照旧显示。
+     * details 不处理，因为它必须有 summary 才能展开。
+     */
+    config(md) {
+      for (const type of ["tip", "info", "warning", "danger"]) {
+        const key = `container_${type}_open`;
+        const original = md.renderer.rules[key];
+        if (!original) continue;
+        md.renderer.rules[key] = (tokens, idx, options, env, self) => {
+          const html = original(tokens, idx, options, env, self);
+          if (tokens[idx].info.trim() !== type) return html;
+          return html.replace(/<p class="custom-block-title">[\s\S]*?<\/p>\n?/, "");
+        };
+      }
+    },
   },
   head,
   vite: {

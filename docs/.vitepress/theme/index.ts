@@ -2,6 +2,7 @@ import type { EnhanceAppContext, Theme } from "vitepress";
 import defaultTheme from "vitepress/theme";
 import { watch } from "vue";
 
+import './styles/blur.css';
 import "uno.css";
 import "./styles/rainbow.css";
 import "./styles/vars.css";
