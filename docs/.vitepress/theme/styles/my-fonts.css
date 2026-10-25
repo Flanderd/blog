@@ -25,7 +25,12 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 15px;
+}
+
+.vp-doc blockquote,
+.vp-doc .custom-block {
+  font-size: inherit;   /* 跟随 body，不再写死 */
 }
 
 .vp-doc h1 {
@@ -100,7 +105,6 @@ body {
   border-left: none;
   color: var(--vp-c-text-1);
   font-family: 'FangSong', 'STFangsong', 'FangSong_GB2312', '仿宋', serif;
-  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -173,10 +177,16 @@ body {
   --vp-custom-block-important-border: var(--vp-c-important-3);
   --vp-custom-block-important-border: color-mix(in srgb, var(--vp-c-important-1) 38%, transparent);
 }
-
+/* callout字体颜色 */
+:root {
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-info-text: var(--vp-c-text-1);
+  --vp-custom-block-warning-text: var(--vp-c-text-1);
+  --vp-custom-block-danger-text: var(--vp-c-text-1);
+  --vp-custom-block-details-text: var(--vp-c-text-1);
+}
 .vp-doc .custom-block {
   font-family: 'Kaiti SC', 'STKaiti', 'KaiTi', 'KaiTi_GB2312', '楷体', serif;
-  font-size: 14px;
   line-height: 1.5;
   
 }
