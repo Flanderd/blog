@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /zhenti/2020.md
+      link: /taxlaw/
     - theme: alt
       text: 进入题库
       link: /yufa/语法基础.md
@@ -30,6 +30,10 @@ features:
     details: 
   
   - title: 数学
+    link: /math/
+    details: 
+  
+  - title: 统计
     link: /math/
     details: 
 ---
