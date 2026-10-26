@@ -22,14 +22,14 @@ hero:
 
 features:
   - title: 税法
-    link: /composition/第一周 主语从句.md
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /taxlaw/
+    details: 
 
   - title: 财务
     link: waikan/10-12eli/首页.md
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: 
   
   - title: 数学
-    link: waikan/jjxr/首页.md
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    link: /math/
+    details: 
 ---
