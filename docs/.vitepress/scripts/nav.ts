@@ -22,11 +22,11 @@ const nav: DefaultTheme.NavItem[] = [
     items:[
     {text:'宏观经济学',link: '/waikan/10-12eli/首页.md'},
     {text:'金融学',link: '/waikan/jjxr/首页.md基础.md'},
-    {text:'统计学',link: '/waikan/jjxr/首页.md基础.md'},
+    {text:'Statistics',link: '/statistics/'},
   ]},
   { text: 'Math', 
     items:[
-    {text:'《高等数学》',link: '/waikan/10-12eli/首页.md'},
+    {text:'《高等数学》',link: '/math/'},
     {text:'《线性代数》',link: '/waikan/jjxr/首页.md基础.md'},
     {text:'《概率论与数理统计》',link: '/waikan/jjxr/首页.md基础.md'},
   ]}

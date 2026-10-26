@@ -385,4 +385,38 @@ export default {
       { text: 'a2', link: '/A/a2' },
     ],
   
+  'statistics': [
+    { text: '统计学知识体系', link: '/statistics/index.md' },
+    { text: '第一章 绪论与基本概念', link: '/statistics/01-绪论与基本概念.md' },
+    { text: '第二章 数据与描述统计', link: '/statistics/02-数据与描述统计.md' },
+    { text: '第三章 概率基础', link: '/statistics/03-概率基础.md' },
+    { text: '第四章 随机变量与常见分布', link: '/statistics/04-随机变量与常见分布.md' },
+    { text: '第五章 多维随机变量', link: '/statistics/05-多维随机变量.md' },
+    { text: '第六章 大数定律与中心极限定理', link: '/statistics/06-大数定律与中心极限定理.md' },
+    { text: '第七章 抽样分布', link: '/statistics/07-抽样分布.md' },
+    { text: '第八章 参数估计', link: '/statistics/08-参数估计.md' },
+    { text: '第九章 假设检验', link: '/statistics/09-假设检验.md' },
+    { text: '第十章 方差分析', link: '/statistics/10-方差分析.md' },
+    { text: '第十一章 回归分析', link: '/statistics/11-回归分析.md' },
+    { text: '第十二章 非参数统计', link: '/statistics/12-非参数统计.md' },
+    { text: '第十三章 时间序列与指数', link: '/statistics/13-时间序列与指数.md' },
+    { text: '第十四章 抽样调查与贝叶斯', link: '/statistics/14-抽样调查与贝叶斯.md' },
+  ],
+
+  'math': [
+    { text: '高等数学知识体系', link: '/math/index.md' },
+    { text: '第一章 函数、极限与连续', link: '/math/01-函数极限与连续.md' },
+    { text: '第二章 导数与微分', link: '/math/02-导数与微分.md' },
+    { text: '第三章 微分中值定理与导数应用', link: '/math/03-微分中值定理与导数应用.md' },
+    { text: '第四章 不定积分', link: '/math/04-不定积分.md' },
+    { text: '第五章 定积分及其应用', link: '/math/05-定积分及其应用.md' },
+    { text: '第六章 多元函数微分学', link: '/math/06-多元函数微分学.md' },
+    { text: '第七章 重积分', link: '/math/07-重积分.md' },
+    { text: '第八章 曲线积分与曲面积分', link: '/math/08-曲线积分与曲面积分.md' },
+    { text: '第九章 无穷级数', link: '/math/09-无穷级数.md' },
+    { text: '第十章 常微分方程', link: '/math/10-常微分方程.md' },
+    { text: '第十一章 向量代数与空间解析几何', link: '/math/11-向量代数与空间解析几何.md' },
+    { text: '第十二章 场论初步', link: '/math/12-场论初步.md' },
+  ],
+
  } as DefaultTheme.Sidebar;
