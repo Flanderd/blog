@@ -301,6 +301,11 @@ body {
   color: var(--vp-c-brand-1);
 }
 
+/* 有序列表的编号加粗（无序列表的圆点不变） */
+.vp-doc ol > li::marker {
+  font-weight: 600;
+}
+
 /* 想给有序、无序分别用不同颜色，解开下面两行（会覆盖上面那条） */
 /* .vp-doc ol > li::marker { color: var(--vp-c-brand-1); } */
 /* .vp-doc ul > li::marker { color: var(--vp-c-brand-2); } */
@@ -391,3 +396,13 @@ body {
 }
 
 /* .vp-doc ul ul ul { list-style-type: square; } */
+
+/* ---------- 数学公式字号 ---------- */
+/**
+ * 行内和块级公式统一缩小一点，避免公式比正文更抢眼。
+ * 想只缩小行内公式，改成：
+ *   .vp-doc mjx-container:not([display='true']) { font-size: 0.9em; }
+ */
+.vp-doc mjx-container {
+  font-size: 0.92em;
+}

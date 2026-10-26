@@ -76,7 +76,7 @@ export default defineConfig({
       { icon: "github", link: github }],
     // 脚注
     footer:{
-      copyright:"Copyright@ 2024"
+      copyright:"Copyright@ 2026"
     },
   },
 });
