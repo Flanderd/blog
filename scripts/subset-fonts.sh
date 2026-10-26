@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # 一次性生成站点自托管的三套中文字体子集
 #
-#   1. 标题    方正小标宋      → fzxbs-subset.woff2   （只含 h1~h3 用字，约 72KB，全局预加载）
+#   1. 标题    思源宋体 Bold   → source-han-serif-bold.woff2（只含 h1~h3 用字，约 116KB，全局预加载）
 #   2. Callout 霞鹜文楷        → lxgw-wenkai.woff2    （常用字，免费可商用，约 850KB，仅在使用页加载）
 #   3. 引用块  仿宋_GB2312     → fangsong.woff2       （常用字，约 550KB，仅在使用页加载）
 #
@@ -17,7 +17,7 @@ trap 'rm -rf "$TMP"' EXIT
 
 KAI_CACHE="docs/.vitepress/cache/LXGWWenKai-Regular.ttf"
 KAI_URL="https://cdn.jsdelivr.net/gh/lxgw/LxgwWenKai@v1.510/fonts/TTF/LXGWWenKai-Regular.ttf"
-FONT_XBS="$HOME/Library/Fonts/方正小标宋简.TTF"
+FONT_HEADING="$HOME/Library/Fonts/SourceHanSerifCN-Bold-2.otf"
 FONT_FS="$HOME/Library/Fonts/仿宋_GB2312.ttf"
 
 SUBSET="pyftsubset"
@@ -78,8 +78,8 @@ subset() {
   echo "生成 $out"
 }
 
-# 标题（源字体在本机）
-subset "$FONT_XBS" "$TMP/heading-chars.txt" "$OUT_DIR/fzxbs-subset.woff2"
+# 标题：思源宋体 Bold（源字体在本机）
+subset "$FONT_HEADING" "$TMP/heading-chars.txt" "$OUT_DIR/source-han-serif-bold.woff2"
 
 # Callout：霞鹜文楷（首次运行下载源字体，缓存到 cache，不入库）
 if [ ! -f "$KAI_CACHE" ]; then

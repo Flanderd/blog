@@ -1,12 +1,12 @@
 /* .vitepress/theme/my-fonts.css */
 /**
- * 标题字体：方正小标宋。
- * 字体文件只存在于本机，其他设备没有，所以把子集化后的 woff2 随站点一起发布。
- * 子集只包含全部 h1~h3 标题用到的字，约 72KB；标题新增生僻字后跑 `npm run font:subset` 重新生成。
+ * 标题字体：思源宋体 Bold（Source Han Serif，SIL OFL 免费可商用）。
+ * 子集只包含全部 h1~h3 标题用到的字，约 116KB；标题新增生僻字后跑 `npm run font:subset` 重新生成。
  */
 @font-face {
-  font-family: 'FZXiaoBiaoSong-Subset';
-  src: url('/fonts/fzxbs-subset.woff2') format('woff2');
+  font-family: 'SourceHanSerif-Bold';
+  src: url('/fonts/source-han-serif-bold.woff2') format('woff2');
+  font-weight: 700;
   font-display: swap;
 }
 
@@ -38,10 +38,9 @@
   --vp-font-family-mono: ui-monospace, SFMono-Regular, Menlo, Consolas,
     'Liberation Mono', monospace;
 
-  /* 标题字体：子集 woff2 优先，拿不到再回退到本机安装的同名字体 */
-  --font-heading: 'FZXiaoBiaoSong-Subset', 'FZXiaoBiaoSong-B05S',
-    '方正小标宋简体', '方正小标宋_GBK', 'STZhongsong', 'Songti SC',
-    'Noto Serif CJK SC', 'Noto Serif SC', 'SimSun', serif;
+  /* 标题字体：思源宋体子集优先，回退到系统里的宋体 */
+  --font-heading: 'SourceHanSerif-Bold', 'Source Han Serif CN',
+    'Noto Serif CJK SC', 'Songti SC', 'STSongti-SC-Bold', 'SimSun', serif;
 
   /* Callout 楷体：子集 woff2 优先，回退到本机的楷体 */
   --font-kaiti: 'LXGWWenKai', 'Kaiti SC', 'STKaiti', 'KaiTi', 'KaiTi_GB2312',
