@@ -1,5 +1,7 @@
 import { defineConfig } from "vitepress";
 import UnoCSS from "unocss/vite";
+// @ts-ignore 纯 JS 模块，没有类型声明
+import { renderMath } from "./plugins/math-chtml.mjs";
 import { pagefindPlugin } from "vitepress-plugin-pagefind";
 import { description, title, github } from "./scripts/meta";
 import sidebar from "./scripts/sidebar";
@@ -15,7 +17,8 @@ export default defineConfig({
   cleanUrls: false,
   markdown: {
     lineNumbers: true,
-    // 数学公式：$$...$$ 块级 / $...$ 行内，构建时由 markdown-it-mathjax3 渲染为 SVG
+    // 数学公式：$$...$$ 块级 / $...$ 行内；token 由 markdown-it-mathjax3 切分，
+    // 渲染规则在下面覆盖为 MathJax CHTML（体积比内联 SVG 小一个量级）
     math: true,
     /**
      * 不写标题的 ::: tip / ::: info / ::: warning / ::: danger 不再显示默认的
@@ -33,6 +36,14 @@ export default defineConfig({
           if (tokens[idx].info.trim() !== type) return html;
           return html.replace(/<p class="custom-block-title">[\s\S]*?<\/p>\n?/, "");
         };
+      }
+
+      // 把 markdown-it-mathjax3 的 SVG 渲染换成 CHTML（MATH_RENDERER=svg 可临时回退）
+      if (process.env.MATH_RENDERER !== "svg") {
+        md.renderer.rules.math_inline = (tokens, idx) =>
+          renderMath(tokens[idx].content, false);
+        md.renderer.rules.math_block = (tokens, idx) =>
+          renderMath(tokens[idx].content, true);
       }
     },
   },

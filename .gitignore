@@ -23,3 +23,8 @@ pnpm-debug.log*
 meta.json
 
 docs/.obsidian/plugins/
+# macOS 元数据
+.DS_Store
+
+# 本地工具目录
+.workbuddy/

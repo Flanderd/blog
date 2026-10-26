@@ -2,9 +2,10 @@
   "type": "module",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "NODE_OPTIONS=--max-old-space-size=8192 vitepress build docs",
     "preview": "vitepress preview docs",
-    "font:subset": "bash scripts/subset-fonts.sh"
+    "font:subset": "bash scripts/subset-fonts.sh",
+    "math:css": "node scripts/gen-math-css.mjs"
   },
   "dependencies": {
     "pagefind": "^1.0.3",

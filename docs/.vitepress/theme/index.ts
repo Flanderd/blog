@@ -10,6 +10,7 @@ import "./styles/global.css";
 
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import './styles/my-fonts.css';
+import './styles/mathjax-chtml.css';
 
 
 
