@@ -4,7 +4,7 @@ import type { DefaultTheme } from "vitepress/types";
 const nav: DefaultTheme.NavItem[] = [
   {text: 'Tax',
     items:[
-    {text:'《税法一》',link: '/taxlaw/税法一/01 增值税/0.本章导读.md'},
+    {text:'《税法一》',link: '/taxlaw/概述.md'},
     {text:'《税法二》',link: '/yufa/语法基础.md'},
     {text:'《涉税实务》',link: '/composition/第一周 主语从句.md'},
     {text:'《财务与会计》',link: '/yufa/语法基础.md'},
@@ -22,6 +22,7 @@ const nav: DefaultTheme.NavItem[] = [
     items:[
     {text:'宏观经济学',link: '/waikan/10-12eli/首页.md'},
     {text:'金融学',link: '/waikan/jjxr/首页.md基础.md'},
+    {text:'统计学',link: '/waikan/jjxr/首页.md基础.md'},
   ]},
   { text: 'Math', 
     items:[
