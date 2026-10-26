@@ -27,8 +27,8 @@ const nav: DefaultTheme.NavItem[] = [
   { text: 'Math', 
     items:[
     {text:'《高等数学》',link: '/math/'},
-    {text:'《线性代数》',link: '/线性代数/'},
-    {text:'《概率论与数理统计》',link: '/概率论与数理统计/'},
+    {text:'《线性代数》',link: '/xxds/'},
+    {text:'《概率论与数理统计》',link: '/gailvlun/'},
   ]}
 ];
 export default nav;

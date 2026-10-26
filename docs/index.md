@@ -22,7 +22,7 @@ hero:
 
 features:
   - title: 税法
-    link: /taxlaw/
+    link: /taxlaw/概述.md
     details: 
 
   - title: 财务
@@ -34,6 +34,14 @@ features:
     details: 
   
   - title: 统计
-    link: /math/
+    link: /statistics/index.md
+    details: 
+
+  - title: 概率论
+    link: /gailvlun/index.md
+    details: 
+
+  - title: 线性代数
+    link: /xxds/index.md
     details: 
 ---
