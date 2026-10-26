@@ -4,7 +4,7 @@ import type { DefaultTheme } from "vitepress/types";
 const nav: DefaultTheme.NavItem[] = [
   {text: 'Tax',
     items:[
-    {text:'《税法一》',link: '/taxlaw/概述.md'},
+    {text:'《税法一》',link: '/taxlaw/index.md'},
     {text:'《税法二》',link: '/yufa/语法基础.md'},
     {text:'《涉税实务》',link: '/composition/第一周 主语从句.md'},
     {text:'《财务与会计》',link: '/yufa/语法基础.md'},
@@ -15,20 +15,20 @@ const nav: DefaultTheme.NavItem[] = [
     items:[
       {text:'《会计实务》',link: '/waikan/10-12eli/首页.md'},
       {text:'《初级经济法》',link: '/waikan/10-12eli/首页.md'},
-      {text:'《财务分析》',link: '/waikan/10-12eli/首页.md'},
-      {text:'《财务管理》',link: '/waikan/jjxr/首页.md基础.md'}
+      {text:'《财务分析》',link: '/financial-analysis/'},
+      {text:'《财务管理》',link: '/financial-management/'}
     ]},
   { text: 'Economy', 
     items:[
     {text:'宏观经济学',link: '/waikan/10-12eli/首页.md'},
     {text:'金融学',link: '/waikan/jjxr/首页.md基础.md'},
-    {text:'Statistics',link: '/statistics/'},
+    {text:'Statistics',link: '/statistics/index.md'},
   ]},
   { text: 'Math', 
     items:[
-    {text:'《高等数学》',link: '/math/'},
-    {text:'《线性代数》',link: '/xxds/'},
-    {text:'《概率论与数理统计》',link: '/gailvlun/'},
+    {text:'《高等数学》',link: '/math/index.md'},
+    {text:'《线性代数》',link: '/xxds/index.md'},
+    {text:'《概率论与数理统计》',link: '/gailvlun/index.md'},
   ]}
 ];
 export default nav;

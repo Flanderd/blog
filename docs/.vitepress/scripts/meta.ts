@@ -6,4 +6,4 @@ export const developerName = "JasonChan";
 export const title = "Homepage";
 
 // 更换成自己的github地址
-export const github = "https://github.com/Flanderd";
+export const github = "";

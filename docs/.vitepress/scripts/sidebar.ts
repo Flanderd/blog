@@ -3,7 +3,7 @@ import type { DefaultTheme } from "vitepress/types";
 // 侧边栏配置
 export default {
   'taxlaw': [
-    {text:'概述',link:'/taxlaw/概述.md'},
+    {text:'概述',link:'/taxlaw/index.md'},
     {text: '《税法一》',
         collapsed: false,
         items: [
@@ -403,8 +403,42 @@ export default {
     { text: '第十四章 抽样调查与贝叶斯', link: '/statistics/14-抽样调查与贝叶斯.md' },
   ],
 
-  'ggl': [
-    { text: '课程总览', link: '/gailvlun/' },
+  'financial-analysis': [
+    { text: '课程总览', link: '/financial-analysis/' },
+    { text: '第一章 财务分析基础', link: '/financial-analysis/01-basics.md' },
+    { text: '第二章 资产负债表分析', link: '/financial-analysis/02-balance-sheet.md' },
+    { text: '第三章 利润表分析', link: '/financial-analysis/03-income-statement.md' },
+    { text: '第四章 现金流量表分析', link: '/financial-analysis/04-cash-flow.md' },
+    { text: '第五章 偿债能力分析', link: '/financial-analysis/05-solvency.md' },
+    { text: '第六章 营运能力分析', link: '/financial-analysis/06-efficiency.md' },
+    { text: '第七章 盈利能力分析', link: '/financial-analysis/07-profitability.md' },
+    { text: '第八章 发展能力分析', link: '/financial-analysis/08-growth.md' },
+    { text: '第九章 综合分析：杜邦体系', link: '/financial-analysis/09-dupont.md' },
+    { text: '第十章 盈余质量与财务粉饰', link: '/financial-analysis/10-earnings-quality.md' },
+    { text: '第十一章 上市公司特定分析', link: '/financial-analysis/11-listed-company.md' },
+    { text: '第十二章 行业分析与比较', link: '/financial-analysis/12-industry.md' },
+    { text: '第十三章 财务分析报告的撰写', link: '/financial-analysis/13-report.md' },
+  ],
+
+  'financial-management': [
+    { text: '课程总览', link: '/financial-management/' },
+    { text: '第一章 财务管理导论', link: '/financial-management/01-introduction.md' },
+    { text: '第二章 财务报表分析', link: '/financial-management/02-financial-analysis.md' },
+    { text: '第三章 货币时间价值', link: '/financial-management/03-time-value-of-money.md' },
+    { text: '第四章 风险与收益', link: '/financial-management/04-risk-and-return.md' },
+    { text: '第五章 证券估值', link: '/financial-management/05-security-valuation.md' },
+    { text: '第六章 资本预算', link: '/financial-management/06-capital-budgeting.md' },
+    { text: '第七章 资本成本', link: '/financial-management/07-cost-of-capital.md' },
+    { text: '第八章 杠杆效应与资本结构', link: '/financial-management/08-leverage-and-capital-structure.md' },
+    { text: '第九章 股利政策', link: '/financial-management/09-dividend-policy.md' },
+    { text: '第十章 营运资本管理', link: '/financial-management/10-working-capital.md' },
+    { text: '第十一章 长期融资', link: '/financial-management/11-long-term-financing.md' },
+    { text: '第十二章 财务预测与预算', link: '/financial-management/12-financial-forecasting.md' },
+    { text: '第十三章 企业价值评估', link: '/financial-management/13-valuation.md' },
+  ],
+
+  'gailvlun': [
+    { text: '课程总览', link: '/gailvlun/index.md' },
     { text: '第一章 随机事件与样本空间', link: '/gailvlun/01-随机事件与样本空间.md' },
     { text: '第二章 概率的定义与性质', link: '/gailvlun/02-概率的定义与性质.md' },
     { text: '第三章 条件概率与独立性', link: '/gailvlun/03-条件概率与独立性.md' },
