@@ -119,32 +119,47 @@ body {
   text-indent: 0;
 } */
 
-/* ---------- 引用块：左侧内嵌颜色条 + 仿宋 ---------- */
+/* ---------- 引用块：左侧内嵌灰色条 + 仿宋 ---------- */
 /**
- * 默认样式是 2px 灰色分隔线 + 灰色文字；
- * 这里改为「内嵌圆角颜色条」（::before 伪元素，品牌色渐变），
- * 文字颜色与正文一致，字体使用仿宋。
+ * 默认主题会给 blockquote 里的 p 单独上 --vp-c-text-2（灰色），
+ * 所以只改 blockquote 本身不够，必须把 p 的颜色也拉回正文色。
+ * 颜色条改为灰色，上下间距、文字与色块的间距都收紧。
  */
 .vp-doc blockquote {
   position: relative;
-  margin: 18px 0;
-  padding: 4px 18px 4px 24px;
+  margin: 8px 0 8px 12px;
+  padding: 2px 16px 2px 12px;
   border-left: none;
   color: var(--vp-c-text-1);
   font-family: var(--font-fangsong);
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* 覆盖默认主题给引用块段落的灰色（--vp-c-text-2）和固定 16px 字号 */
+.vp-doc blockquote p,
+.vp-doc blockquote > p {
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+  margin: 2px 0;
 }
 
 .vp-doc blockquote::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 5px;
-  bottom: 5px;
+  top: 7px;
+  bottom: 7px;
   width: 2px;
-  background: var(--vp-c-brand-soft);
-  /* 不支持 color-mix 的旧浏览器沿用上面 soft 色，同样偏淡 */
-  background: color-mix(in srgb, var(--vp-c-brand-2) 45%, transparent);
+  border-radius: 1px;
+  /* 柔和灰：默认主题 divider 太淡，text-3 又太重，这里取 text-2 的 40% 透明度 */
+  background: var(--vp-c-divider);
+  background: color-mix(in srgb, var(--vp-c-text-2) 15%, transparent);
+}
+
+/* 深色模式下 40% 太淡，几乎看不见，单独提亮一点 */
+.dark .vp-doc blockquote::before {
+  background: color-mix(in srgb, var(--vp-c-text-2) 70%, transparent);
 }
 /* 引用块里的强调文字保持加粗但回到正文色，避免仿宋加粗发糊 */
 .vp-doc blockquote strong {
@@ -352,7 +367,7 @@ body {
 /**
  * 一级：1. 2. 3.
  * 二级：（1）（2）（3）
- * 三级：a. b. c.
+ * 三级：① ② ③ …（最多到 ⑳，再往后回退成数字）
  * （1）这类全角括号比 "1." 宽，所以二级单独加大 padding-left，
  * 否则编号会顶到上一级文字里。
  */
@@ -360,6 +375,13 @@ body {
   system: extends decimal;
   prefix: '(';
   suffix: ') ';
+}
+
+/* 三级用圈号 ①–⑳；超过 20 项时按规范回退成十进制数字 */
+@counter-style circled-number {
+  system: fixed;
+  symbols: "\2460" "\2461" "\2462" "\2463" "\2464" "\2465" "\2466" "\2467" "\2468" "\2469" "\246A" "\246B" "\246C" "\246D" "\246E" "\246F" "\2470" "\2471" "\2472" "\2473";
+  suffix: " ";
 }
 
 /* 有序列表ol1-4层级样式 */
@@ -373,8 +395,13 @@ body {
 }
 
 .vp-doc ol ol ol {
-  list-style-type: upper-alpha;
-  padding-left: 1.6em;
+  list-style-type: circled-number;
+  padding-left: 1.8em;
+}
+
+/* 圈号比字母小一圈，单独放大一号 */
+.vp-doc ol ol ol > li::marker {
+  font-size: 1.15em;
 }
 .vp-doc ol ol ol ol {
   list-style-type: lower-alpha;
