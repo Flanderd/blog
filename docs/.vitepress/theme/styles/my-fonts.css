@@ -51,6 +51,16 @@
     '仿宋', serif;
 }
 
+/**
+ * VitePress 默认在 :root 上写了 font-synthesis: style，会禁用「字重合成」。
+ * 楷体 / 仿宋子集只有 Regular 一个字重，结果 callout、引用块里的 <strong>
+ * 加粗完全看不出来。这里恢复重量合成（保留原有的 style 合成）。
+ */
+:root,
+html body {
+  font-synthesis: weight style;
+}
+
 body {
   font-size: 15px;
 }
@@ -402,6 +412,8 @@ body {
 /* 圈号比字母小一圈，单独放大一号 */
 .vp-doc ol ol ol > li::marker {
   font-size: 1.15em;
+  /* 圈号字重比一级/二级轻一些，避免糊成一团 */
+  font-weight: 400;
 }
 .vp-doc ol ol ol ol {
   list-style-type: lower-alpha;
