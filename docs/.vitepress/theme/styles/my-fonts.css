@@ -359,7 +359,7 @@ body {
 @counter-style paren-number {
   system: extends decimal;
   prefix: '(';
-  suffix: ').';
+  suffix: ') ';
 }
 
 /* 有序列表ol1-4层级样式 */
