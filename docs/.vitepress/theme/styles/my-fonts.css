@@ -101,12 +101,13 @@ body {
 .vp-doc h3 {
   font-family: var(--font-heading);
   font-size: 16px;
-  line-height: 10px;
-
+  /* 原来是 10px，长标题在手机上换行会叠在一起，改成正常行高 */
+  line-height: 1.5;
 }
 
 .vp-doc h4 {
   font-size: 14px;
+  line-height: 1.5;
   margin-top: 16px;
 }
 
