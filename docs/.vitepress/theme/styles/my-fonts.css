@@ -11,6 +11,16 @@
 }
 
 /**
+ * Callout 楷体：来自本机「楷体_GB2312」，子集化后随站点发布（约 654KB，仅在使用页加载）。
+ * 手机（尤其 Android）系统里没有楷体，必须自带字体才不会退回黑体/宋体。
+ */
+@font-face {
+  font-family: 'KaitiSubset';
+  src: url('/fonts/kaiti.woff2') format('woff2');
+  font-display: swap;
+}
+
+/**
  * 引用块字体：仿宋（来自本机 仿宋_GB2312，子集化后随站点发布）。
  * 只在有引用块的页面才会下载（约 550KB），不做全局预加载。
  */
@@ -32,8 +42,9 @@
   --font-heading: 'SourceHanSerif-Bold', 'Source Han Serif CN',
     'Noto Serif CJK SC', 'Songti SC', 'STSongti-SC-Bold', 'SimSun', serif;
 
-  /* Callout 楷体：只用系统楷体（不再加载霞鹜文楷 webfont） */
-  --font-kaiti: 'Kaiti SC', 'STKaiti', 'KaiTi', 'KaiTi_GB2312', '楷体', serif;
+  /* Callout 楷体：自带子集优先（手机端没有楷体），回退系统楷体 */
+  --font-kaiti: 'KaitiSubset', 'Kaiti SC', 'STKaiti', 'KaiTi', 'KaiTi_GB2312',
+    '楷体', serif;
 
   /* 引用块仿宋：子集 woff2 优先，回退到本机仿宋 */
   --font-fangsong: 'FangSongSubset', 'FangSong', 'STFangsong', 'FangSong_GB2312',
