@@ -1,0 +1,22 @@
+{
+  "name": "Homepage",
+  "short_name": "Homepage",
+  "description": "NoteBooks · 个人知识库",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#3451b2",
+  "icons": [
+    { "src": "/pwa/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/pwa/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    {
+      "src": "/pwa/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

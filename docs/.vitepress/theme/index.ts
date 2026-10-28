@@ -11,6 +11,8 @@ import "./styles/global.css";
 import DefaultTheme from 'vitepress/theme-without-fonts'
 import './styles/my-fonts.css';
 import './styles/mathjax-chtml.css';
+import './styles/reading-settings.css';
+import Layout from './Layout.vue';
 
 
 
@@ -36,6 +38,7 @@ function updatePageStyle(value: boolean) {
 
 const theme: Theme = {
   ...defaultTheme,
+  Layout,
   enhanceApp({ router }: EnhanceAppContext) {
     if (typeof window === "undefined") return;
 

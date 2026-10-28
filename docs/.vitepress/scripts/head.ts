@@ -12,8 +12,30 @@ const head: HeadConfig[] = [
     "meta",
     { name: "apple-mobile-web-app-status-bar-style", content: "default" },
   ],
+  // 首屏前应用已保存的阅读字体，避免默认字体闪一下
+  [
+    "script",
+    {},
+    "try{var f=localStorage.getItem('site:bodyFont');if(f&&f!=='system')document.documentElement.dataset.bodyFont=f}catch(e){}",
+  ],
   ["link", { rel: "shortcut icon", href: "/logo.svg" }],
   ["link", { rel: "icon", type: "image/x-icon", href: "/logo.svg" }],
+  // PWA：manifest、主题色、iOS 图标与 Service Worker 注册
+  ["link", { rel: "manifest", href: "/manifest.webmanifest" }],
+  ["meta", { name: "theme-color", content: "#3451b2" }],
+  ["meta", { name: "mobile-web-app-capable", content: "yes" }],
+  ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+  ["link", { rel: "apple-touch-icon", href: "/pwa/apple-touch-icon.png" }],
+  // 仅在构建产物里注册 SW，避免开发服务器被缓存干扰
+  ...(process.env.NODE_ENV === "production"
+    ? ([
+        [
+          "script",
+          {},
+          "if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js').catch(function(){})})}",
+        ],
+      ] as HeadConfig[])
+    : []),
   // 标题字体子集（思源宋体 Bold），提前加载，避免标题先闪一下回退字体
   [
     "link",

@@ -5,7 +5,8 @@
     "build": "NODE_OPTIONS=--max-old-space-size=8192 vitepress build docs",
     "preview": "vitepress preview docs",
     "font:subset": "bash scripts/subset-fonts.sh",
-    "math:css": "node scripts/gen-math-css.mjs"
+    "math:css": "node scripts/gen-math-css.mjs",
+    "dev:qr": "qrdev vitepress dev docs --host 0.0.0.0"
   },
   "dependencies": {
     "pagefind": "^1.0.3",
@@ -20,6 +21,7 @@
     "node": "24.x"
   },
   "devDependencies": {
-    "markdown-it-mathjax3": "^4.3.2"
+    "markdown-it-mathjax3": "^4.3.2",
+    "qrdev": "^1.1.1"
   }
 }

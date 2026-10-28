@@ -1,0 +1,119 @@
+/* ---------- 阅读设置：正文字体切换 ---------- */
+.font-settings {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+}
+
+.fs-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s;
+}
+
+.fs-trigger:hover,
+.fs-trigger.is-open {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+}
+
+.fs-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 100;
+  width: 232px;
+  padding: 8px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+}
+
+.fs-title {
+  margin: 4px 8px 6px;
+  color: var(--vp-c-text-3);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.fs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fs-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 7px 8px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.fs-option:hover {
+  background: var(--vp-c-default-soft);
+}
+
+.fs-option.is-active {
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  font-weight: 600;
+}
+
+.fs-name {
+  flex: 1;
+  white-space: nowrap;
+}
+
+.fs-sample {
+  color: var(--vp-c-text-3);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.fs-option.is-active .fs-sample {
+  color: var(--vp-c-brand-1);
+}
+
+.fs-check {
+  width: 14px;
+  text-align: right;
+  font-size: 12px;
+}
+
+/* 手机菜单里的区块 */
+.font-settings.is-screen {
+  display: block;
+  margin: 16px 0 0;
+  padding: 16px 0 8px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.font-settings.is-screen .fs-list {
+  margin-top: 4px;
+}
+
+.font-settings.is-screen .fs-option {
+  padding: 9px 8px;
+}

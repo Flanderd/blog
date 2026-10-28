@@ -18,6 +18,7 @@ trap 'rm -rf "$TMP"' EXIT
 FONT_HEADING="$HOME/Library/Fonts/SourceHanSerifCN-Bold-2.otf"
 FONT_FS="$HOME/Library/Fonts/仿宋_GB2312.ttf"
 FONT_KAI="$HOME/Library/Fonts/楷体_GB2312.TTF"
+FONT_LXGW="$PWD/docs/.vitepress/cache/LXGWWenKai-Regular.ttf"
 
 SUBSET="pyftsubset"
 command -v pyftsubset >/dev/null 2>&1 || SUBSET="python3 -m fontTools.subset"
@@ -85,5 +86,12 @@ subset "$FONT_KAI" "$TMP/common-chars.txt" "$OUT_DIR/kaiti.woff2"
 
 # 引用块：仿宋（源字体在本机）
 subset "$FONT_FS" "$TMP/common-chars.txt" "$OUT_DIR/fangsong.woff2"
+
+# 正文字体切换：霞鹜文楷（缓存的 ttf，缺失时跳过）
+if [ -f "$FONT_LXGW" ]; then
+  subset "$FONT_LXGW" "$TMP/common-chars.txt" "$OUT_DIR/lxgw-wenkai.woff2"
+else
+  echo "跳过霞鹜文楷：找不到 $FONT_LXGW" >&2
+fi
 
 ls -lh "$OUT_DIR"
