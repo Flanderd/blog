@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { back2topPlugin } from 'vitepress-plugin-back2top';
 import UnoCSS from "unocss/vite";
 // @ts-ignore 纯 JS 模块，没有类型声明
 import { renderMath } from "./plugins/math-chtml.mjs";
@@ -49,7 +50,16 @@ export default defineConfig({
   },
   head,
   vite: {
-    plugins: [UnoCSS(), pagefindPlugin()],
+    plugins: [
+      UnoCSS(),
+      pagefindPlugin(),
+      back2topPlugin({
+        // 可选配置
+        top: 450, // 滚动多少距离后出现
+        marginBottom: 80, // 距离底部的距离
+        iconSize: 20, // 图标大小
+      }),
+    ],
   },
   locales: {
     root: { label: "简体中文", lang: "zh-CN" },

@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-# 一次性生成站点自托管的三套中文字体子集
+# 一次性生成站点自托管的中文字体子集
 #
 #   1. 标题    思源宋体 Bold   → source-han-serif-bold.woff2（只含 h1~h3 用字，约 116KB，全局预加载）
-#   2. Callout 霞鹜文楷        → lxgw-wenkai.woff2    （常用字，免费可商用，约 850KB，仅在使用页加载）
-#   3. 引用块  仿宋_GB2312     → fangsong.woff2       （常用字，约 550KB，仅在使用页加载）
+#   2. 引用块  仿宋_GB2312     → fangsong.woff2       （常用字，约 550KB，仅在使用页加载）
 #
 # 依赖：python3 -m pip install fonttools brotli
 # 用法：bash scripts/subset-fonts.sh
@@ -15,15 +14,13 @@ OUT_DIR="docs/public/fonts"
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
-KAI_CACHE="docs/.vitepress/cache/LXGWWenKai-Regular.ttf"
-KAI_URL="https://cdn.jsdelivr.net/gh/lxgw/LxgwWenKai@v1.510/fonts/TTF/LXGWWenKai-Regular.ttf"
 FONT_HEADING="$HOME/Library/Fonts/SourceHanSerifCN-Bold-2.otf"
 FONT_FS="$HOME/Library/Fonts/仿宋_GB2312.ttf"
 
 SUBSET="pyftsubset"
 command -v pyftsubset >/dev/null 2>&1 || SUBSET="python3 -m fontTools.subset"
 
-mkdir -p "$OUT_DIR" "$(dirname "$KAI_CACHE")"
+mkdir -p "$OUT_DIR"
 
 # ---------- 1. 字集 ----------
 # 标题：只取 h1~h3
@@ -81,12 +78,7 @@ subset() {
 # 标题：思源宋体 Bold（源字体在本机）
 subset "$FONT_HEADING" "$TMP/heading-chars.txt" "$OUT_DIR/source-han-serif-bold.woff2"
 
-# Callout：霞鹜文楷（首次运行下载源字体，缓存到 cache，不入库）
-if [ ! -f "$KAI_CACHE" ]; then
-  echo "下载霞鹜文楷：$KAI_URL"
-  curl -fL --retry 3 -o "$KAI_CACHE" "$KAI_URL"
-fi
-subset "$KAI_CACHE" "$TMP/common-chars.txt" "$OUT_DIR/lxgw-wenkai.woff2"
+# Callout 已改用系统楷体（Kaiti SC / STKaiti / KaiTi），不再生成霞鹜文楷子集。
 
 # 引用块：仿宋（源字体在本机）
 subset "$FONT_FS" "$TMP/common-chars.txt" "$OUT_DIR/fangsong.woff2"

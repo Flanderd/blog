@@ -11,16 +11,6 @@
 }
 
 /**
- * Callout 字体：霞鹜文楷（LXGW WenKai，SIL OFL 免费可商用）。
- * 同样只收录当前提示框里出现过的字，约 71KB；新增生僻字后跑 `npm run font:subset`。
- */
-@font-face {
-  font-family: 'LXGWWenKai';
-  src: url('/fonts/lxgw-wenkai.woff2') format('woff2');
-  font-display: swap;
-}
-
-/**
  * 引用块字体：仿宋（来自本机 仿宋_GB2312，子集化后随站点发布）。
  * 只在有引用块的页面才会下载（约 550KB），不做全局预加载。
  */
@@ -42,9 +32,8 @@
   --font-heading: 'SourceHanSerif-Bold', 'Source Han Serif CN',
     'Noto Serif CJK SC', 'Songti SC', 'STSongti-SC-Bold', 'SimSun', serif;
 
-  /* Callout 楷体：子集 woff2 优先，回退到本机的楷体 */
-  --font-kaiti: 'LXGWWenKai', 'Kaiti SC', 'STKaiti', 'KaiTi', 'KaiTi_GB2312',
-    '楷体', serif;
+  /* Callout 楷体：只用系统楷体（不再加载霞鹜文楷 webfont） */
+  --font-kaiti: 'Kaiti SC', 'STKaiti', 'KaiTi', 'KaiTi_GB2312', '楷体', serif;
 
   /* 引用块仿宋：子集 woff2 优先，回退到本机仿宋 */
   --font-fangsong: 'FangSongSubset', 'FangSong', 'STFangsong', 'FangSong_GB2312',
@@ -107,6 +96,7 @@ body {
 
 .vp-doc h4 {
   font-size: 14px;
+  margin-top: 16px;
 }
 
 .vp-doc h5,
@@ -260,10 +250,24 @@ body {
   --vp-custom-block-danger-text: var(--vp-c-text-1);
   --vp-custom-block-details-text: var(--vp-c-text-1);
 }
+/**
+ * Callout 正文字体：西文与数字用 Times New Roman，中文用楷体。
+ * 字体栈按「先西文、后中文」排列：Times New Roman 没有汉字字形，
+ * 浏览器会自动为汉字逐个回退到后面的楷体（子集 woff2 → 系统楷体）。
+ */
+:root {
+  --font-callout: 'Times New Roman', 'Times', 'Nimbus Roman No9 L', 'Liberation Serif',
+    var(--font-kaiti);
+}
+
 .vp-doc .custom-block {
-  font-family: var(--font-kaiti);
+  font-family: var(--font-callout);
   line-height: 1.5;
-  
+}
+
+/* 保证框内各级元素（段落、列表、表格、引用、加粗）继承同一套字体 */
+.vp-doc .custom-block :is(p, li, td, th, dd, dt, blockquote, .custom-block-title) {
+  font-family: var(--font-callout);
 }
 
 /* 标题与正文同为楷体，标题保持加粗并沿用各类型默认强调色 */

@@ -7,8 +7,8 @@ const nav: DefaultTheme.NavItem[] = [
     {text:'《税法一》',link: '/taxlaw/index.md'},
     {text:'《税法二》',link: '/yufa/语法基础.md'},
     {text:'《涉税实务》',link: '/composition/第一周 主语从句.md'},
-    {text:'《财务与会计》',link: '/yufa/语法基础.md'},
-    {text:'《涉税法律》',link: '/yufa/语法基础.md'},
+    {text:'《财务与会计》',link: '/taxlaw/财务与会计/'},
+    {text:'《涉税法律》',link: '/taxlaw/涉税服务相关法律/0.目录.md'},
     ]
   },
   { text: 'Finance', 
@@ -17,6 +17,13 @@ const nav: DefaultTheme.NavItem[] = [
       {text:'《初级经济法》',link: '/waikan/10-12eli/首页.md'},
       {text:'《财务分析》',link: '/financial-analysis/'},
       {text:'《财务管理》',link: '/financial-management/'}
+    ]},
+  { text: 'CPA', 
+    items:[
+      {text:'《会计》',link: '/cpa/会计/0.目录.md'},
+      {text:'《税法》',link: '/cpa/税法/0.目录.md'},
+      {text:'《财务管理》',link: '/xxds/index.md'},
+      {text:'《审计》',link: '/gailvlun/index.md'},
     ]},
   { text: 'Economy', 
     items:[

@@ -21,27 +21,58 @@ hero:
       link: /yufa/语法基础.md
 
 features:
-  - title: 税法
-    link: /taxlaw/概述.md
-    details: 
+  - icon:
+      src: /nyg.svg
+      alt: 会计
+      width: 20
+      height: 20
+    title: 会计
+    link: /cpa/会计/0.目录.md
+    details: Taxation
 
-  - title: 财务
+  - title: 税法
+    icon:
+      src: /电视.svg
+      alt: 税法
+      width: 20
+      height: 20
     link: waikan/10-12eli/首页.md
-    details: 
+    details: Finance
   
   - title: 数学
     link: /math/
-    details: 
+    details: Math
+    icon:
+      src: /火箭.svg
+      alt: 税法
+      width: 20
+      height: 20
   
   - title: 统计
     link: /statistics/index.md
-    details: 
+    details: Statistics
+    icon:
+      src: /留声机.svg
+      alt: 税法
+      width: 20
+      height: 20
 
   - title: 概率论
     link: /gailvlun/index.md
-    details: 
-
+    details: Probability
+    icon:
+      src: /披萨.svg
+      alt: 税法
+      width: 20
+      height: 20
   - title: 线性代数
     link: /xxds/index.md
-    details: 
+    details: Linear Algebra
+
+    icon:
+      src: /望远镜.svg
+      alt: 税法
+      width: 20
+      height: 20
+  
 ---

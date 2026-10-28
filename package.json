@@ -12,6 +12,7 @@
     "typescript": "^5.1.6",
     "unocss": "^0.53.4",
     "vitepress": "1.0.0-rc.20",
+    "vitepress-plugin-back2top": "^0.1.5",
     "vitepress-plugin-pagefind": "^0.2.10",
     "windicss": "^3.5.6"
   },
