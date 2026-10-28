@@ -1,7 +1,9 @@
 <script setup>
 import { onBeforeUnmount, onMounted, ref } from 'vue'
+import FontOptionList from './FontOptionList.vue'
 
 defineProps({
+  // nav：导航栏按钮（大屏）；menu：三点菜单里的一块；screen：手机菜单里的一块
   variant: { type: String, default: 'nav' },
 })
 
@@ -59,26 +61,18 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <!-- 手机端菜单里的设置区：直接铺开，不做悬浮面板 -->
-  <div v-if="variant === 'screen'" class="font-settings is-screen">
+  <!-- 手机菜单 / 三点菜单里的区块 -->
+  <div
+    v-if="variant !== 'nav'"
+    class="font-settings"
+    :class="variant === 'menu' ? 'is-menu' : 'is-screen'"
+  >
     <p class="fs-title">正文字体</p>
-    <div class="fs-list">
-      <button
-        v-for="f in FONTS"
-        :key="f.id"
-        class="fs-option"
-        :class="{ 'is-active': current === f.id }"
-        @click="choose(f.id)"
-      >
-        <span class="fs-name">{{ f.label }}</span>
-        <span class="fs-sample" :style="{ fontFamily: f.stack }">永字八法</span>
-        <span class="fs-check">{{ current === f.id ? '✓' : '' }}</span>
-      </button>
-    </div>
+    <FontOptionList :fonts="FONTS" :current="current" @choose="choose" />
   </div>
 
-  <!-- 桌面端导航栏里的齿轮按钮 + 下拉面板 -->
-  <div v-else ref="root" class="font-settings">
+  <!-- 大屏导航栏按钮 + 下拉面板 -->
+  <div v-else ref="root" class="font-settings fs-inline">
     <button
       class="fs-trigger"
       :class="{ 'is-open': open }"
@@ -91,19 +85,7 @@ onBeforeUnmount(() => {
     </button>
     <div v-if="open" class="fs-panel" role="menu">
       <p class="fs-title">正文字体</p>
-      <button
-        v-for="f in FONTS"
-        :key="f.id"
-        class="fs-option"
-        :class="{ 'is-active': current === f.id }"
-        role="menuitemradio"
-        :aria-checked="current === f.id"
-        @click="choose(f.id)"
-      >
-        <span class="fs-name">{{ f.label }}</span>
-        <span class="fs-sample" :style="{ fontFamily: f.stack }">永字八法</span>
-        <span class="fs-check">{{ current === f.id ? '✓' : '' }}</span>
-      </button>
+      <FontOptionList :fonts="FONTS" :current="current" @choose="choose" />
     </div>
   </div>
 </template>

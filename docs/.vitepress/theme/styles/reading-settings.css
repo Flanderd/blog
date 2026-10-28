@@ -3,7 +3,18 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-left: 6px;
+}
+
+/* 大屏才显示栏上的 Aa 按钮，768–1279px 收进「…」菜单（与 GitHub 图标一致） */
+.font-settings.fs-inline {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .font-settings.fs-inline {
+    display: flex;
+    margin-left: 6px;
+  }
 }
 
 .fs-trigger {
@@ -116,4 +127,21 @@
 
 .font-settings.is-screen .fs-option {
   padding: 9px 8px;
+}
+
+/* 注入到「…」菜单里的字体区块 */
+.font-settings.is-menu {
+  display: block;
+  margin: 12px -12px 0;
+  padding: 12px 12px 4px;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+.font-settings.is-menu .fs-title {
+  margin: 0 0 6px;
+  padding: 0 4px;
+}
+
+.font-settings.is-menu .fs-option {
+  padding: 7px 8px;
 }

@@ -8,7 +8,7 @@ titleTemplate: Learning English
 hero:
   name: "JasonChan's Lab"
   text: ""
-  tagline: Keep learning and Make progress
+  tagline: CPA、税务师、经济师
   image:
     src: /home.svg
     alt: 背景图

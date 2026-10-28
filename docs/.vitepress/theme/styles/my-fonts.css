@@ -333,6 +333,9 @@ body {
   overflow-y: hidden;
   overflow-scrolling: touch;
   -webkit-overflow-scrolling: touch;
+  /* overflow-y:hidden 会按 padding box 裁剪；给上下留出空间，
+     避免汉字下移后以及高分式/上下标的墨迹被裁掉 */
+  padding: 0.3em 0;
 }
 
 .vp-doc mjx-container[display='true'] > svg {
@@ -490,4 +493,38 @@ html[data-body-font='kaiti'] {
 
 html[data-body-font='fangsong'] {
   --vp-font-family-base: 'FangSongSubset', 'FangSong', 'STFangsong', serif;
+}
+
+/* ---------- 正文里的下划线：链接与 <u> 都不显示横线 ---------- */
+.vp-doc a {
+  text-decoration: none;
+}
+
+.vp-doc a:hover {
+  text-decoration: none;
+  color: var(--vp-c-brand-2);
+}
+
+/* 正文里用 <u> / <ins> 标注的普通文字：保留横线，但收细、减淡 */
+.vp-doc u,
+.vp-doc ins {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: color-mix(in srgb, currentColor 80%, transparent);
+  text-underline-offset: 3px;
+}
+
+
+/* ---------- 数学公式里的中文：用楷体 ---------- */
+/**
+ * MathJax CHTML 对字体里没有的字符（中文）会输出 <mjx-utext>，
+ * 并带内联样式 font-family: MJXZERO, serif，看起来像宋体/衬线体。
+ * 这里只覆盖 mjx-utext：数学符号与英文仍走 MathJax 自己的字体，
+ * 因此效果上就是「只把公式里的汉字换成楷体」。
+ */
+mjx-container mjx-utext {
+  font-family: 'KaitiSubset', 'KaiTi', 'Kaiti SC', 'STKaiti',
+    'KaiTi_GB2312', serif !important;
+  /* 楷体字面比数学字体略高：下移约 0.11em，让汉字的视觉中线与 =、× 等符号对齐 */
+  vertical-align: -0.11em;
 }

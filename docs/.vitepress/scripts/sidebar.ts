@@ -902,7 +902,7 @@ export default {
         { text: '6.税务权利与义务', link: '/cpa/税法/1.税法总论/6.税务权利与义务.md' },
         { text: '7.国际税收关系', link: '/cpa/税法/1.税法总论/7.国际税收关系.md' },
       ] },
-      { text: '2.增值税法', collapsed: true, items: [
+      { text: '2.增值税法★★★', collapsed: true, items: [
         { text: '0.章首', link: '/cpa/税法/2.增值税法/0.章首.md' },
         { text: '1.征税范围', link: '/cpa/税法/2.增值税法/1.征税范围.md' },
         { text: '2.纳税人和扣缴义务人', link: '/cpa/税法/2.增值税法/2.纳税人和扣缴义务人.md' },
@@ -914,14 +914,14 @@ export default {
         { text: '8.税收优惠', link: '/cpa/税法/2.增值税法/8.税收优惠.md' },
         { text: '9.征收管理', link: '/cpa/税法/2.增值税法/9.征收管理.md' },
       ] },
-    { text: '3.消费税法', collapsed: true, items: [
+    { text: '3.消费税法★★★', collapsed: true, items: [
       { text: '0.章首', link: '/cpa/税法/3.消费税法/0.章首.md' },
       { text: '1.纳税人与税目、税率', link: '/cpa/税法/3.消费税法/1.纳税人与税目、税率.md' },
       { text: '2.计税依据', link: '/cpa/税法/3.消费税法/2.计税依据.md' },
       { text: '3.应纳税额的计算', link: '/cpa/税法/3.消费税法/3.应纳税额的计算.md' },
       { text: '4.征收管理', link: '/cpa/税法/3.消费税法/4.征收管理.md' },
     ] },
-    { text: '4.企业所得税法', collapsed: true, items: [
+    { text: '4.企业所得税法★★★', collapsed: true, items: [
       { text: '0.章首', link: '/cpa/税法/4.企业所得税法/0.章首.md' },
       { text: '1.纳税人、征税对象与税率', link: '/cpa/税法/4.企业所得税法/1.纳税人、征税对象与税率.md' },
       { text: '2.应纳税所得额', link: '/cpa/税法/4.企业所得税法/2.应纳税所得额.md' },
@@ -932,7 +932,7 @@ export default {
       { text: '7.应纳税额的计算', link: '/cpa/税法/4.企业所得税法/7.应纳税额的计算.md' },
       { text: '8.征收管理', link: '/cpa/税法/4.企业所得税法/8.征收管理.md' },
     ] },
-    { text: '5.个人所得税法', collapsed: true, items: [
+    { text: '5.个人所得税法★★★', collapsed: true, items: [
       { text: '0.章首', link: '/cpa/税法/5.个人所得税法/0.章首.md' },
       { text: '1.纳税义务人与征税范围', link: '/cpa/税法/5.个人所得税法/1.纳税义务人与征税范围.md' },
       { text: '2.税率、应纳税所得额的确定与应纳税额的计算', link: '/cpa/税法/5.个人所得税法/2.税率、应纳税所得额的确定与应纳税额的计算.md' },
@@ -959,7 +959,7 @@ export default {
       { text: '1.资源税法', link: '/cpa/税法/8.资源税法和环境保护税法/1.资源税法.md' },
       { text: '2.环境保护税法', link: '/cpa/税法/8.资源税法和环境保护税法/2.环境保护税法.md' },
     ] },
-    { text: '9.城镇土地使用税法和耕地占用税法', collapsed: true, items: [
+    { text: '9.城镇土地使用税法★★和耕地占用税法', collapsed: true, items: [
       { text: '1.城镇土地使用税法', link: '/cpa/税法/9.城镇土地使用税法和耕地占用税法/1.城镇土地使用税法.md' },
       { text: '2.耕地占用税法', link: '/cpa/税法/9.城镇土地使用税法和耕地占用税法/2.耕地占用税法.md' },
     ] },
