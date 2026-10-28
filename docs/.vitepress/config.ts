@@ -3,7 +3,6 @@ import { back2topPlugin } from 'vitepress-plugin-back2top';
 import UnoCSS from "unocss/vite";
 // @ts-ignore 纯 JS 模块，没有类型声明
 import { renderMath } from "./plugins/math-chtml.mjs";
-import { pagefindPlugin } from "vitepress-plugin-pagefind";
 import { description, title, github } from "./scripts/meta";
 import sidebar from "./scripts/sidebar";
 import head from "./scripts/head";
@@ -52,7 +51,6 @@ export default defineConfig({
   vite: {
     plugins: [
       UnoCSS(),
-      pagefindPlugin(),
       back2topPlugin({
         // 可选配置
         top: 450, // 滚动多少距离后出现
@@ -65,9 +63,6 @@ export default defineConfig({
     root: { label: "简体中文", lang: "zh-CN" },
   },
   themeConfig: {
-    search: {
-      provider: "local",
-    },
     sidebar,
     // https://vitepress.dev/reference/default-theme-config
     nav,
