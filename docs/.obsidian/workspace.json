@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "taxlaw/税法一/01 增值税/5.税收优惠.md",
+                "file": "taxlaw/税法一/01 增值税/6.一般计税方法应纳税额计算.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.税收优惠"
+              "title": "6.一般计税方法应纳税额计算"
             }
           }
         ]
@@ -191,6 +191,18 @@
   },
   "active": "c00277cc4b7ab49b",
   "lastOpenFiles": [
+    "taxlaw/税法一/11 非税收入/0.本章导读.md",
+    "taxlaw/税法一/10 社会保险费/0.本章导读.md",
+    "taxlaw/税法一/09 关税/0.本章导读.md",
+    "taxlaw/税法一/08 烟叶税/0.本章导读.md",
+    "taxlaw/税法一/07 环境保护税/0.本章导读.md",
+    "taxlaw/税法一/06 车辆购置税/0.本章导读.md",
+    "taxlaw/税法一/05 资源税/0.本章导读.md",
+    "taxlaw/税法一/04 土地增值税/0.本章导读.md",
+    "taxlaw/税法一/03 城市维护建设税/0.本章导读.md",
+    "taxlaw/税法一/01 增值税/4.税率和征收率.md",
+    "taxlaw/税法一/01 增值税/3.征税范围.md",
+    "taxlaw/税法一/01 增值税/5.税收优惠.md",
     "taxlaw/税法一/01 增值税/1.增值税概述.md",
     "taxlaw/税法一/01 增值税/0.本章导读.md",
     "taxlaw/税法一/01 增值税/2.纳税人和扣缴义务人.md"

@@ -28,3 +28,6 @@ docs/.obsidian/plugins/
 
 # 本地工具目录
 .workbuddy/
+.work/
+.venv-pdf/
+.docs/.obsidian/

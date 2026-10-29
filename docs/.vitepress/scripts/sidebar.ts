@@ -43,10 +43,11 @@ export default {
           {text: '三、城市维护建设税',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/03 城市维护建设税/0.本章导读.md' },
               { text: '1.城市维护建设税概述', link: '/taxlaw/税法一/03 城市维护建设税/1.城市维护建设税概述.md' },
               { text: '2.纳税人', link: '/taxlaw/税法一/03 城市维护建设税/2.纳税人.md' },
               { text: '3.征税范围', link: '/taxlaw/税法一/03 城市维护建设税/3.征税范围.md' },
-              { text: '4.税率', link: '//taxlaw/税法一/03 城市维护建设税/4.税率.md' },
+              { text: '4.税率', link: '/taxlaw/税法一/03 城市维护建设税/4.税率.md' },
               { text: '5.税收优惠', link: '/taxlaw/税法一/03 城市维护建设税/5.税收优惠.md' },
               { text: '6.计税依据', link: '/taxlaw/税法一/03 城市维护建设税/6.计税依据.md' },
               { text: '7.应纳税额的计算', link: '/taxlaw/税法一/03 城市维护建设税/7.应纳税额的计算.md' },
@@ -56,6 +57,7 @@ export default {
           {text: '四、土地增值税',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/04 土地增值税/0.本章导读.md' },
               { text: '1.土地增值税概述', link: '/taxlaw/税法一/04 土地增值税/1.土地增值税概述.md' },
               { text: '2.纳税人', link: '/taxlaw/税法一/04 土地增值税/2.纳税人.md'},
               { text: '3.征税范围和税率', link: '/taxlaw/税法一/04 土地增值税/3.征税范围和税率.md' },
@@ -69,6 +71,7 @@ export default {
           {text: '五、资源税',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/05 资源税/0.本章导读.md' },
               { text: '1.资源税概述', link: '/taxlaw/税法一/05 资源税/1.资源税概述.md' },
               { text: '2.纳税人', link: '/taxlaw/税法一/05 资源税/2.纳税人.md' },
               { text: '3.税目和税率', link: '/taxlaw/税法一/05 资源税/3.税目和税率.md' },
@@ -81,6 +84,7 @@ export default {
           {text: '六、车辆购置税',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/06 车辆购置税/0.本章导读.md' },
               { text: '1.车辆购置税概述', link: '/taxlaw/税法一/06 车辆购置税/1.车辆购置税概述.md' },
               { text: '2.纳税人', link: '/taxlaw/税法一/06 车辆购置税/2.纳税人.md' },
               { text: '3.征税范围和税率', link: '/taxlaw/税法一/06 车辆购置税/3.征税范围和税率.md' },
@@ -93,6 +97,7 @@ export default {
           {text: '七、环境保护税',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/07 环境保护税/0.本章导读.md' },
               { text: '1.环境保护税概述', link: '/taxlaw/税法一/07 环境保护税/1.环境保护税概述.md' },
               { text: '2.纳税人和征税对象', link: '/taxlaw/税法一/07 环境保护税/2.纳税人和征税对象.md' },
               { text: '3.税目和税率', link: '/taxlaw/税法一/07 环境保护税/3.税目和税率.md' },
@@ -104,6 +109,7 @@ export default {
           {text: '八、烟叶税',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/08 烟叶税/0.本章导读.md' },
               { text: '1.烟叶税概述', link: '/taxlaw/税法一/08 烟叶税/1.烟叶税概述.md' },
               { text: '2.纳税人', link: '/taxlaw/税法一/08 烟叶税/2.纳税人.md' },
               { text: '3.征税对象和税率', link: '/taxlaw/税法一/08 烟叶税/3.征税对象和税率.md' },
@@ -115,6 +121,7 @@ export default {
           {text: '九、关税',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/09 关税/0.本章导读.md' },
               { text: '1.关税概述', link: '/taxlaw/税法一/09 关税/1.关税概述.md' },
               { text: '2.纳税人、扣缴义务人和征税对象', link: '/taxlaw/税法一/09 关税/2.纳税人、扣缴义务人和征税对象.md' },
               { text: '3.税率及税率适用', link: '/taxlaw/税法一/09 关税/3.税率及税率适用.md' },
@@ -127,6 +134,7 @@ export default {
           {text: '十、社会保险费',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/10 社会保险费/0.本章导读.md' },
               { text: '1.社会保险费概述', link: '/taxlaw/税法一/10 社会保险费/1.社会保险费概述.md' },
               { text: '2.基本养老保险费', link: '/taxlaw/税法一/10 社会保险费/2.基本养老保险费.md' },
               { text: '3.基本医疗保险费和生育保险费', link: '/taxlaw/税法一/10 社会保险费/3.基本医疗保险费和生育保险费.md' },
@@ -138,6 +146,7 @@ export default {
           {text: '十一、非税收入',
             collapsed: true,
             items: [
+              { text: '0.本章导读', link: '/taxlaw/税法一/11 非税收入/0.本章导读.md' },
               { text: '1.非税收入概述', link: '/taxlaw/税法一/11 非税收入/1.非税收入概述.md' },
               { text: '2.行政事业性收费', link: '/taxlaw/税法一/11 非税收入/2.行政事业性收费.md' },
               { text: '3.政府性基金', link: '/taxlaw/税法一/11 非税收入/3.政府性基金.md' },

@@ -1,0 +1,95 @@
+/* ---------- 标题折叠按钮 ---------- */
+.vp-fold-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15em;
+  height: 1.15em;
+  margin-left: 0;
+  margin-right: 0.45em;
+  padding: 0;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--vp-c-text-3);
+  font-size: 0.62em;
+  line-height: 1;
+  vertical-align: 0.12em;
+  cursor: pointer;
+  opacity: 0.65;
+  transition: opacity 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.vp-fold-btn:hover {
+  opacity: 1;
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.vp-fold-btn::before {
+  content: '▾';
+}
+
+.vp-fold-btn[aria-expanded='false']::before {
+  content: '▸';
+}
+
+.vp-fold-body.is-collapsed {
+  display: none;
+}
+
+/* ---------- 嵌套列表折叠按钮 ---------- */
+.vp-doc li {
+  position: relative;
+}
+
+.vp-list-btn {
+  position: absolute;
+  left: -2.5em;
+  top: 0.14em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 0.75em;
+  height: 0.75em;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--vp-c-text-3);
+  font-size: 0.8em;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s, color 0.2s;
+}
+
+/* 二级、三级列表的编号更宽，按钮再往外挪一点，避免压到编号 */
+.vp-doc ol ol > li > .vp-list-btn,
+.vp-doc ul ul > li > .vp-list-btn {
+  left: -3.5em;
+}
+
+.vp-doc ol ol ol > li > .vp-list-btn,
+.vp-doc ul ul ul > li > .vp-list-btn {
+  left: -3em;
+}
+
+.vp-list-btn:hover {
+  opacity: 1;
+  color: var(--vp-c-brand-1);
+}
+
+.vp-list-btn::before {
+  content: '▾';
+}
+
+.vp-list-btn[aria-expanded='false']::before {
+  content: '▸';
+}
+
+.vp-doc li.is-collapsed > ul,
+.vp-doc li.is-collapsed > ol {
+  display: none;
+}

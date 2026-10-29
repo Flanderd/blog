@@ -3,6 +3,7 @@ import { back2topPlugin } from 'vitepress-plugin-back2top';
 import UnoCSS from "unocss/vite";
 // @ts-ignore 纯 JS 模块，没有类型声明
 import { renderMath } from "./plugins/math-chtml.mjs";
+import { foldPlugin } from "./plugins/fold";
 import { description, title, github } from "./scripts/meta";
 import sidebar from "./scripts/sidebar";
 import head from "./scripts/head";
@@ -37,6 +38,9 @@ export default defineConfig({
           return html.replace(/<p class="custom-block-title">[\s\S]*?<\/p>\n?/, "");
         };
       }
+
+      // 标题与嵌套列表的折叠结构（构建期生成，运行时不改 DOM）
+      foldPlugin(md);
 
       // 把 markdown-it-mathjax3 的 SVG 渲染换成 CHTML（MATH_RENDERER=svg 可临时回退）
       if (process.env.MATH_RENDERER !== "svg") {

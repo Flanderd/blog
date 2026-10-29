@@ -1,6 +1,6 @@
 import type { EnhanceAppContext, Theme } from "vitepress";
 import defaultTheme from "vitepress/theme";
-import { watch } from "vue";
+import { nextTick, watch } from "vue";
 
 import './styles/blur.css';
 import "uno.css";
@@ -12,6 +12,8 @@ import DefaultTheme from 'vitepress/theme-without-fonts'
 import './styles/my-fonts.css';
 import './styles/mathjax-chtml.css';
 import './styles/reading-settings.css';
+import './styles/collapsible.css';
+import { setupFold } from './fold-client';
 import Layout from './Layout.vue';
 
 
@@ -44,9 +46,17 @@ const theme: Theme = {
 
     watch(
       () => router.route.data.relativePath,
-      () => updatePageStyle(location.pathname === "/"),
+      async () => {
+        updatePageStyle(location.pathname === "/");
+        await nextTick();
+        setupFold();
+      },
       { immediate: true }
     );
+
+    router.onAfterRouteChanged = () => {
+      nextTick(() => setupFold());
+    };
   },
 };
 
