@@ -610,6 +610,9 @@ export default {
   
   'statistics': [
     { text: '统计学知识体系', link: '/statistics/index.md' },
+    { text: '《统计学》', 
+       collapsed: false,
+       items:[
     { text: '教材目录', link: '/statistics/0.目录.md' },
     { text: '01 导论', collapsed: true, items: [
       { text: '0.章首', link: '/statistics/01 导论/0.章首.md' },
@@ -707,6 +710,9 @@ export default {
       { text: 'B 用Excel生成概率分布表', link: '/statistics/附录/B 用Excel生成概率分布表.md' },
       { text: 'C 参考文献', link: '/statistics/附录/C 参考文献.md' },
     ] },
+    ]
+
+    },
   ],
 
   'financial-analysis': [
