@@ -49,8 +49,29 @@ loadEnvLocal();
 if (!existsSync(DIST)) fail(`找不到构建产物：${DIST}\n请先运行 npm run build`);
 if (!existsSync(BIN)) fail("找不到 staticrypt，请先运行 npm i");
 if (!existsSync(CONFIG)) fail(`缺少 ${CONFIG}（salt 必须固定，否则「记住我」会失效）`);
-if (!process.env.STATICRYPT_PASSWORD)
-  fail("未设置 STATICRYPT_PASSWORD。本地请写入 .env.local，线上请配置到 Vercel 环境变量");
+// 兜底清洗：Vercel 上粘贴时可能带首尾空格、换行或引号
+const password = (process.env.STATICRYPT_PASSWORD ?? "")
+  .trim()
+  .replace(/^["']|["']$/g, "");
+
+if (!password) {
+  const envName = process.env.VERCEL_ENV ?? "本地";
+  const near = Object.keys(process.env).filter((k) => /staticrypt/i.test(k));
+  const detail = near.length
+    ? near
+        .map((k) => `  · ${JSON.stringify(k)}（值长度 ${(process.env[k] ?? "").length}）`)
+        .join("\n")
+    : "  · 构建环境里找不到任何名字含 STATICRYPT 的变量";
+  fail(
+    `未设置 STATICRYPT_PASSWORD（当前构建环境：${envName}）\n` +
+      `实际拿到的相近变量：\n${detail}\n\n` +
+      `Vercel 侧排查：\n` +
+      `  1. Settings → Environment Variables 里该变量的 Environments 是否勾选了「${envName}」\n` +
+      `  2. 变量名不要带首尾空格；值不要加引号\n` +
+      `  3. 改完必须 Redeploy 才会生效\n` +
+      `本地开发则写入 .env.local`
+  );
+}
 
 rmSync(TMP, { recursive: true, force: true });
 
@@ -72,7 +93,7 @@ execFileSync(
     "--template-toggle-show", "显示密码",
     "--template-toggle-hide", "隐藏密码",
   ],
-  { stdio: "inherit", env: process.env, cwd: ROOT }
+  { stdio: "inherit", env: { ...process.env, STATICRYPT_PASSWORD: password }, cwd: ROOT }
 );
 
 // staticrypt 会把输出放在 <TMP>/<输入目录名>/ 下
