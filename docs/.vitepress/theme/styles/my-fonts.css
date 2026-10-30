@@ -319,23 +319,46 @@ body {
   text-align: center;
 }
 
-/* ---------- 数学公式：超宽时在容器内横向滚动 ---------- */
+/* ---------- 块级公式的浅灰底 ---------- */
+/* .vp-doc .math-block {
+  margin: 10px 0;
+  padding: 3px 12px;
+  border-radius: 8px;
+
+  background: #fcfcfd;
+} */
+
+.vp-doc .math-inline {
+  /* background: var(--vp-c-bg-soft); */
+  background: #fbfbfb;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+/* ---------- 数学公式：超宽时自动换行 ---------- */
 /**
- * MathJax 的块级公式是一张固定宽度的 SVG，宽度超过正文栏就会溢出。
- * 这里让公式容器自己滚动，而不是把整页撑开：
- * - svg 改成 display:block + margin auto：放得下时居中，放不下时自动靠左，
- *   避免行内居中在溢出状态下把左边内容裁掉（滚不到）；
- * - overflow-y: hidden 只留横向滚动条，不出现竖向滚动条。
+ * MathJax CHTML 默认把公式渲染成 inline-block + nowrap，宽度超过正文栏就会溢出。
+ * 这里把 mjx-math 改回 inline 并允许换行，长公式会像文字一样折成多行；
+ * 换行点由浏览器在公式元素（运算符、分式、文字块）之间决定。
+ * 仍保留 overflow-x:auto 作为兜底：单个分式/矩阵本身比容器还宽时还能横向拖动。
  */
 .vp-doc mjx-container[display='true'] {
   max-width: 100%;
+  /* 正常情况靠换行显示；只有单个分式/矩阵本身超宽时才横向滚动兜底 */
   overflow-x: auto;
   overflow-y: hidden;
   overflow-scrolling: touch;
+  white-space: normal;
   -webkit-overflow-scrolling: touch;
   /* overflow-y:hidden 会按 padding box 裁剪；给上下留出空间，
      避免汉字下移后以及高分式/上下标的墨迹被裁掉 */
   padding: 0.3em 0;
+}
+
+/* 公式内部允许换行：MathJax 默认是 inline-block + nowrap，超宽只能溢出 */
+.vp-doc mjx-container[display='true'] mjx-math {
+  display: inline;
+  white-space: normal;
 }
 
 .vp-doc mjx-container[display='true'] > svg {
@@ -473,12 +496,12 @@ body {
 
 /* ---------- 数学公式字号 ---------- */
 /**
- * 行内和块级公式统一缩小一点，避免公式比正文更抢眼。
- * 想只缩小行内公式，改成：
- *   .vp-doc mjx-container:not([display='true']) { font-size: 0.9em; }
+ * 公式字号跟随正文（1em）；之前是 0.92em，看起来偏小。
+ * 想单独调行内公式可加：
+ *   .vp-doc mjx-container:not([display='true']) { font-size: 0.95em; }
  */
 .vp-doc mjx-container {
-  font-size: 0.92em;
+  font-size: 1em;
 }
 
 /* ---------- 正文字体切换（阅读设置） ---------- */

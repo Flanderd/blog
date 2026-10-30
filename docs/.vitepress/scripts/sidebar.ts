@@ -3,8 +3,8 @@ import type { DefaultTheme } from "vitepress/types";
 // 侧边栏配置
 export default {
   'taxlaw': [
-    {text:'概述',link:'/taxlaw/index.md'},
-    {text: '《税法一》',
+{text:'概述',link:'/taxlaw/index.md'},
+{text: '《税法一》',
         collapsed: false,
         items: [
           { text: '一、增值税★★★',
@@ -155,10 +155,13 @@ export default {
             ]
           },
           ]
-      },
-    {text: '《税法二》',
+      }
+  ],
+
+  'taxlaw/税法二': [
+    {text:'《税法二》',
       collapsed: false,
-      items: [
+      items:[
         {text: '一、企业所得税★★★',
           collapsed: true,
           items: [
@@ -174,6 +177,7 @@ export default {
             { text: '10.特别纳税调整', link: '/taxlaw/税法二/01 企业所得税/10.特别纳税调整.md' },
             { text: '11.征收管理', link: '/taxlaw/税法二/01 企业所得税/11.征收管理.md' }
           ]
+          
         },
         {text: '二、个人所得税★★★',
           collapsed: true,
@@ -274,11 +278,15 @@ export default {
       { text: '4.应纳税额的计算', link: '/taxlaw/税法二/10 船舶吨税/4.应纳税额的计算.md' },
       { text: '5.征收管理', link: '/taxlaw/税法二/10 船舶吨税/5.征收管理.md' }
       ]
-    }
-      ]
-      },
-    { text: '《涉税服务相关法律》', collapsed: false, items: [
-      { text: '0.教材目录', link: '/taxlaw/涉税服务相关法律/0.目录.md' },
+    }  
+  ],
+},
+  ],
+  'taxlaw/涉税服务相关法律': [
+    {text:'《涉税服务相关法律》',
+      collapsed: false,
+      items:[
+      { text: '教材目录', link: '/taxlaw/涉税服务相关法律/0.目录.md' },
       // 第一编 行政法律制度
       { text: '一、行政法总论', collapsed: true, items: [
         { text: '0.本章导读', link: '/taxlaw/涉税服务相关法律/01 行政法总论/0.本章导读.md' },
@@ -418,8 +426,11 @@ export default {
         { text: '4.刑事诉讼程序', link: '/taxlaw/涉税服务相关法律/18 刑事诉讼法/4.刑事诉讼程序.md' },
       ] },
       { text: '附录 考试大纲（2026 年度）', link: '/taxlaw/涉税服务相关法律/附录/《涉税服务相关法律》考试大纲（2026年度）.md' }
-    ] },
-    ],
+      ],
+    },
+  ],
+
+
   'taxlaw/财务与会计': [
     { text: '教材目录', link: '/taxlaw/财务与会计/00-目录.md' },
     { text: '考试大纲（2026 年度）', link: '/taxlaw/财务与会计/附录/《财务与会计》考试大纲（2026年度）.md' },
@@ -576,10 +587,10 @@ export default {
         ],
       },
     ],
-  'composition': [
-      {text: '每周积累',
+  'english': [
+      {text: '1',
         items: [
-          { text: '第一周 主语从句', link: 'composition/第一周 主语从句.md' },
+          { text: '第一周 主语从句', link: 'english/index.md' },
           { text: '第二周 There be', link: 'composition/第二周 There be.md' },
           { text: '第三周 动名词', link: 'composition/第三周 动名词.md' },
           { text: '第四周 形式主语:宾语', link: 'composition/第四周 形式主语:宾语.md' },

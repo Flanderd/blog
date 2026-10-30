@@ -5,9 +5,9 @@ const nav: DefaultTheme.NavItem[] = [
   {text: 'Tax',
     items:[
     {text:'《税法一》',link: '/taxlaw/index.md'},
-    {text:'《税法二》',link: '/yufa/语法基础.md'},
+    {text:'《税法二》',link: '/taxlaw/税法二/'},
     {text:'《涉税实务》',link: '/composition/第一周 主语从句.md'},
-    {text:'《财务与会计》',link: '/taxlaw/财务与会计/'},
+    {text:'《财务与会计》',link: '/taxlaw/财务与会计/00-目录.md'},
     {text:'《涉税法律》',link: '/taxlaw/涉税服务相关法律/0.目录.md'},
     ]
   },
@@ -36,6 +36,12 @@ const nav: DefaultTheme.NavItem[] = [
     {text:'《高等数学》',link: '/math/index.md'},
     {text:'《线性代数》',link: '/xxds/index.md'},
     {text:'《概率论与数理统计》',link: '/gailvlun/index.md'},
+  ]},
+  { text: 'English', 
+    items:[
+    {text:'1',link: '/english/index.md'},
+    {text:'2',link: '/xxds/index.md'},
+    {text:'3',link: '/gailvlun/index.md'},
   ]}
 ];
 export default nav;
