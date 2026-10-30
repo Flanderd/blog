@@ -36,7 +36,7 @@ features:
       alt: 税法
       width: 20
       height: 20
-    link: waikan/10-12eli/首页.md
+    link: docs/taxlaw/index.md
     details: Finance
   
   - title: 数学
