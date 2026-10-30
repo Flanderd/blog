@@ -39,7 +39,7 @@ features:
     link: docs/taxlaw/index.md
     details: Finance
   
-  - title: 数学
+  - title: 审计
     link: /math/
     details: Math
     icon:
