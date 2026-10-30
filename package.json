@@ -3,8 +3,6 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "NODE_OPTIONS=--max-old-space-size=8192 vitepress build docs",
-    "build:lock": "npm run build && node scripts/staticrypt-build.mjs",
-    "lock": "node scripts/staticrypt-build.mjs",
     "preview": "vitepress preview docs",
     "font:subset": "bash scripts/subset-fonts.sh",
     "math:css": "node scripts/gen-math-css.mjs",
@@ -24,7 +22,6 @@
   },
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
-    "qrdev": "^1.1.1",
-    "staticrypt": "^3.5.4"
+    "qrdev": "^1.1.1"
   }
 }

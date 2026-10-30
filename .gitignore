@@ -32,5 +32,3 @@ docs/.obsidian/plugins/
 .venv-pdf/
 .docs/.obsidian/
 
-# Staticrypt 临时输出
-.staticrypt-tmp/
