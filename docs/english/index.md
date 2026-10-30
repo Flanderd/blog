@@ -1,17 +1,20 @@
-## 相关性分析（Correlation analysis）
-定义：相关性分析用于度量两个变量之间的线性关系强度。常见的相关系数包括皮尔逊相关系数。
+## 数学公式Latex
+$\frac{a}{b},\sqrt{x},\left|x\right|$
 
-公式：`皮尔逊相关系数`
-$$
-  r_{xy}=\frac{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sqrt{\sum_{i=1}^{n}\left(x_{i}-\bar{x}\right)^2\sum_{i=1}^{n}\left(y_{i}-\bar{y}\right)^2}}
-$$
-```py
-import numpy as np
-x = np.array([1,2,3,4,5])
-y = np.array([2,4,6,8,10])
+$\hat{x},\int_{a}^{b}x^2\,\mathrm{d}x$
 
-correlation = np.corrcoef(x,y)[0,1]
-print(f"皮尔逊相关系数：{correlation}")
+$\geq,\leq,\neq,><$,$\bar{x}$
+```latex
+\frac{a}{b}
+\sqrt{x}
+\left{x}
+\left|x\right|
+\hat{x}
+\int_{a}^{b}x^2\,\mathrm{d}x
+\geq
+\bar{x}
+\geq,\leq,\neq,><
+\bar{x}
 ```
 
 ::: tip

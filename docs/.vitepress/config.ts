@@ -17,7 +17,7 @@ export default defineConfig({
   useWebFonts: false,
   cleanUrls: false,
   markdown: {
-    lineNumbers: true,
+    lineNumbers: false,
     // 数学公式：$$...$$ 块级 / $...$ 行内；token 由 markdown-it-mathjax3 切分，
     // 渲染规则在下面覆盖为 MathJax CHTML（体积比内联 SVG 小一个量级）
     math: true,
