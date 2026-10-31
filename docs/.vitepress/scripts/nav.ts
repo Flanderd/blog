@@ -13,7 +13,7 @@ const nav: DefaultTheme.NavItem[] = [
   },
   { text: 'Finance', 
     items:[
-      {text:'《会计实务》',link: '/waikan/10-12eli/首页.md'},
+      {text:'《会计实务》',link: '/accounting/初级会计实务/0.目录.md'},
       {text:'《初级经济法》',link: '/waikan/10-12eli/首页.md'},
       {text:'《财务分析》',link: '/financial-analysis/'},
       {text:'《财务管理》',link: '/financial-management/'}
