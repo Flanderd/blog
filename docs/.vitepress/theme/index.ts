@@ -14,6 +14,8 @@ import './styles/mathjax-chtml.css';
 import './styles/reading-settings.css';
 import './styles/collapsible.css';
 import { setupFold } from './fold-client';
+import { enhanceAppWithAbbr } from 'vitepress-plugin-abbr/client';
+import 'vitepress-plugin-abbr/style.css';
 import Layout from './Layout.vue';
 
 
@@ -41,7 +43,9 @@ function updatePageStyle(value: boolean) {
 const theme: Theme = {
   ...defaultTheme,
   Layout,
-  enhanceApp({ router }: EnhanceAppContext) {
+  enhanceApp(ctx: EnhanceAppContext) {
+    enhanceAppWithAbbr(ctx);
+    const { router } = ctx;
     if (typeof window === "undefined") return;
 
     watch(

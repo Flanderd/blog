@@ -4,6 +4,7 @@ import UnoCSS from "unocss/vite";
 // @ts-ignore 纯 JS 模块，没有类型声明
 import { renderMath } from "./plugins/math-chtml.mjs";
 import { foldPlugin } from "./plugins/fold";
+import { abbrMarkdownPlugin } from "vitepress-plugin-abbr";
 import { description, title, github } from "./scripts/meta";
 import sidebar from "./scripts/sidebar";
 import head from "./scripts/head";
@@ -39,6 +40,14 @@ export default defineConfig({
         };
       }
 
+      // 缩写词：*[VAT]: Value Added Tax
+      md.use(abbrMarkdownPlugin, {
+        VAT: "Value Added Tax（增值税）",
+        CPA: "Certified Public Accountant（注册会计师）",
+        IFRS: "International Financial Reporting Standards（国际财务报告准则）",
+        GAAP: "Generally Accepted Accounting Principles（公认会计原则）",
+      });
+
       // 标题与嵌套列表的折叠结构（构建期生成，运行时不改 DOM）
       foldPlugin(md);
 
@@ -67,6 +76,8 @@ export default defineConfig({
     root: { label: "简体中文", lang: "zh-CN" },
   },
   themeConfig: {
+    // 使用 VitePress 内置本地搜索（已移除 pagefind）
+    search: { provider: "local" },
     sidebar,
     // https://vitepress.dev/reference/default-theme-config
     nav,
