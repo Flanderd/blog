@@ -551,3 +551,40 @@ mjx-container mjx-utext {
   /* 楷体字面比数学字体略高：下移约 0.11em，让汉字的视觉中线与 =、× 等符号对齐 */
   vertical-align: -0.11em;
 }
+
+/* ---------- 移动端内容溢出防护 ---------- */
+/* 宽表格、长代码、长单词都可能把页面撑宽，导致手机上整页被横向裁切。 */
+.vp-doc pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.vp-doc img,
+.vp-doc video,
+.vp-doc iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.vp-doc p,
+.vp-doc li {
+  overflow-wrap: break-word;
+}
+
+.vp-doc :not(pre) > code {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  /* 手机上让代码块内部换行，避免整段文字被当成代码块时横向溢出 */
+  .vp-doc pre code {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+}
