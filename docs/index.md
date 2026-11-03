@@ -3,7 +3,7 @@
 layout: home
 
 title: JasonChan's Lab
-titleTemplate: Learning English
+titleTemplate: 
 
 hero:
   name: "JasonChan's Lab"

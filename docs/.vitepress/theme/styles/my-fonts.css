@@ -328,12 +328,11 @@ body {
   background: #fcfcfd;
 } */
 
-.vp-doc .math-inline {
-  /* background: var(--vp-c-bg-soft); */
+/* .vp-doc .math-inline {
   background: #fbfbfb;
   border-radius: 3px;
   padding: 0 3px;
-}
+} */
 
 /* ---------- 数学公式：超宽时自动换行 ---------- */
 /**
