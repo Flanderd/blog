@@ -1,4 +1,6 @@
 [
   "text-color-toolbar",
-  "editing-toolbar"
+  "editing-toolbar",
+  "callout-manager",
+  "obsidian-latex-suite"
 ]

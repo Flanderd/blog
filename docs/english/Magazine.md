@@ -3,12 +3,15 @@
 `China’s most successful Astroturf operation: grassroots football`
 
 `中国最成功的人造草皮行动：草根足球`
+$$\sqrt{ x^2 }=1
 
-On a cool autumn night, a man dressed as Guan Yu, a legendary general from 1,800 years ago, mounted his black steed and charged around a stadium. From the stands 26,000 fans erupted in cheers—and then thunderous chants for their football team: “Yiyang must win!” Nearly two hours later, Yiyang had lost, 1-0, to their stronger opponents from Changsha, the capital of Hunan province. Yiyang’s players, their bright orange jerseys muddy and socks torn from the hard-fought match, could not hold back tears.
+\text{此题何解}
+$$
+On a cool autumn night, a man **`dressed as`** Guan Yu, a legendary general from 1,800 years ago, mounted his black steed and charged around a stadium. From the stands 26,000 fans erupted in cheers—and then thunderous chants for their football team: “Yiyang must win!” Nearly two hours later, Yiyang had lost, 1-0, to their stronger opponents from Changsha, the capital of Hunan province. Yiyang’s players, their bright $x \frac{234}{123}\times 5$orange jerseys muddy and socks torn from the hard-fought match, could not hold back tears.
 
 Welcome to the spectacle, and the emotion, of the grassroots provincial football leagues sweeping across China. “Xiangchao (the Hunan league) is better than the World Cup,” goes one local joke. The skills are—put politely—uneven, with lots of missed passes, fluffed shots and, in the Yiyang match, a goal review that took 11 excruciating minutes. But the passion is real, more so than that surrounding China’s perennially inept national team.
 
-The city-versus-city amateur competitions began only in spring 2025, starting in Jiangsu, and have inspired copycats in about 20 other provinces. Officials see the leagues chiefly as economic catalysts. Their most striking impact, though, has been social. Against the backdrop of a sluggish economy, they have given people something to cheer, and with all the devotion and irrationality of sports fans anywhere. “It’s been a morale booster for us,” says a sponsor of the Yiyang team.
+The city-versus-city amateur competitions began only in spring 2025, starting in Jiangsu, and have inspired copycats in about 20 other provinces. Officials **see** the leagues chiefly as economic catalysts. Their most striking impact, though, has been social. Against the backdrop of a sluggish economy, they have given people something to cheer, and with all the devotion and irrationality of sports fans anywhere. “It’s been a morale booster for us,” says a sponsor of the Yiyang team.
 
 A few hours before kick-off, the plaza outside the Yiyang stadium had a carnival-like atmosphere. Stalls sold spicy soup, stinky tofu, a mashed tea drink and other local delights. The biggest queues were for giveaways, including jars of Hunanese chilli relish. Superfans gathered early to bang on drums, wave oversized flags and belt out their chants. They were a good-natured bunch, joking with fans of the opposing side and wrapping Chaguan in a team scarf. Cheerleaders warmed up for their half-time performance; in keeping with the family atmosphere of the whole event, they were clad in ankle-length Chinese opera-style robes.
 
