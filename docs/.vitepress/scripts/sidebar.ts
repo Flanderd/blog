@@ -998,6 +998,9 @@ export default {
   ],
   'cpa/审计': [
     { text: '教材目录', link: '/cpa/审计/0.目录.md' },
+    { text: 'CPA审计', 
+      items:[
+
     // 第一编 审计基本原理和职业道德
     { text: '01 审计概述', collapsed: true, items: [
       { text: '1.审计的概念与保证程度', link: '/cpa/审计/01 审计概述/1.审计的概念与保证程度.md' },
@@ -1189,12 +1192,14 @@ export default {
       { text: '2.项目质量复核', link: '/cpa/审计/24 会计师事务所业务质量管理/2.项目质量复核.md' },
       { text: '3.对财务报表审计实施的质量管理', link: '/cpa/审计/24 会计师事务所业务质量管理/3.对财务报表审计实施的质量管理.md' },
     ] },
+    ]
+
+    },
   ],
 
   'cpa/税法': [
     { text: '教材目录', link: '/cpa/税法/0.目录.md' },
     { text: 'CPA 税法', 
-      collapsed: false,
       items:[
       { text: '1.税法总论', collapsed: true, items: [
         { text: '1.税法概念', link: '/cpa/税法/1.税法总论/1.税法概念.md' },

@@ -2,7 +2,16 @@ import type { DefaultTheme } from "vitepress/types";
 
 // 菜单
 const nav: DefaultTheme.NavItem[] = [
-  {text: 'Tax',
+  { text: 'CPA', 
+    items:[
+      {text:'《会计》',link: '/cpa/会计/0.目录.md'},
+      {text:'《审计》',link: '/cpa/审计/0.目录.md'},
+      {text:'《税法》',link: '/cpa/税法/0.目录.md'},
+      {text:'《财务成本管理》',link: '/cpa/财务成本管理/0.目录.md'},
+      {text:'《经济法》',link: '/cpa/经济法/0.目录.md'},
+      {text:'《公司战略与风险管理》',link: '/cpa/公司战略与风险管理/0.目录.md'},
+    ]},
+  {text: 'TAX',
     items:[
     {text:'《税法一》',link: '/taxlaw/index.md'},
     {text:'《税法二》',link: '/taxlaw/税法二/'},
@@ -15,20 +24,10 @@ const nav: DefaultTheme.NavItem[] = [
     items:[
       {text:'《会计实务》',link: '/accounting/初级会计实务/0.目录.md'},
       {text:'《初级经济法》',link: '/waikan/10-12eli/首页.md'},
-      {text:'《财务分析》',link: '/financial-analysis/'},
-      {text:'《财务管理》',link: '/financial-management/'}
     ]},
-  { text: 'CPA', 
-    items:[
-      {text:'《会计》',link: '/cpa/会计/0.目录.md'},
-      {text:'《税法》',link: '/cpa/税法/0.目录.md'},
-      {text:'《财务管理》',link: '/xxds/index.md'},
-      {text:'《审计》',link: '/cpa/审计/0.目录.md'},
-    ]},
+
   { text: 'Economy', 
     items:[
-    {text:'宏观经济学',link: '/waikan/10-12eli/首页.md'},
-    {text:'金融学',link: '/waikan/jjxr/首页.md基础.md'},
     {text:'Statistics',link: '/statistics/index.md'},
   ]},
   { text: 'Math', 
