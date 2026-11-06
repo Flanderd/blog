@@ -23,7 +23,7 @@ const nav: DefaultTheme.NavItem[] = [
       {text:'《会计》',link: '/cpa/会计/0.目录.md'},
       {text:'《税法》',link: '/cpa/税法/0.目录.md'},
       {text:'《财务管理》',link: '/xxds/index.md'},
-      {text:'《审计》',link: '/gailvlun/index.md'},
+      {text:'《审计》',link: '/cpa/审计/0.目录.md'},
     ]},
   { text: 'Economy', 
     items:[

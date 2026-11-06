@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "taxlaw/税法一/01 增值税/5.税收优惠.md",
+                "file": "taxlaw/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.税收优惠"
+              "title": "index"
+            }
+          },
+          {
+            "id": "8a1a64931c26e2ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "未命名"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 403.35546875
   },
   "right": {
     "id": "187a717216b9b40b",
@@ -99,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "taxlaw/税法一/01 增值税/2.纳税人和扣缴义务人.md",
+                "file": "taxlaw/税法一/01 增值税/5.税收优惠.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "taxlaw/税法一/01 增值税/2.纳税人和扣缴义务人.md",
+                "file": "未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -170,12 +185,12 @@
               "title": "大纲"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 526.41796875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,33 +205,43 @@
       "callout-manager:Insert Callout": false
     }
   },
-  "active": "c00277cc4b7ab49b",
+  "active": "8a1a64931c26e2ae",
   "lastOpenFiles": [
-    "taxlaw/税法一/01 增值税/6.一般计税方法应纳税额计算.md",
-    "taxlaw/税法一/01 增值税/5.税收优惠.md",
-    "english/index.md",
-    "english/假设检验.md",
-    "accounting/初级会计实务/07 收入、费用和利润/1.收入.md",
-    "accounting/初级会计实务/07 收入、费用和利润/2.费用.md",
-    "accounting/初级会计实务/07 收入、费用和利润/3.利润.md",
-    "accounting/初级会计实务/07 收入、费用和利润/0.章首.md",
-    "accounting/初级会计实务/08 财务报告/1.财务报告的概述.md",
-    "accounting/初级会计实务/02 会计基础/2.会计科目和借贷记账法.md",
-    "accounting/初级会计实务/02 会计基础/1.会计要素与会计等式.md",
-    "english/Magazine.md",
-    "taxlaw/__obsidian_test.md",
-    "__obsidian_test.md",
-    "taxlaw/税法一/11 非税收入/0.本章导读.md",
-    "taxlaw/税法一/10 社会保险费/0.本章导读.md",
-    "taxlaw/税法一/09 关税/0.本章导读.md",
-    "taxlaw/税法一/08 烟叶税/0.本章导读.md",
-    "taxlaw/税法一/07 环境保护税/0.本章导读.md",
-    "taxlaw/税法一/06 车辆购置税/0.本章导读.md",
-    "taxlaw/税法一/05 资源税/0.本章导读.md",
-    "taxlaw/税法一/04 土地增值税/0.本章导读.md",
-    "taxlaw/税法一/03 城市维护建设税/0.本章导读.md",
-    "taxlaw/税法一/01 增值税/4.税率和征收率.md",
-    "taxlaw/税法一/01 增值税/3.征税范围.md",
-    "taxlaw/税法一/01 增值税/1.增值税概述.md"
+    "cpa/审计/0.目录.md",
+    "cpa/审计/24 会计师事务所业务质量管理/3.对财务报表审计实施的质量管理.md",
+    "cpa/审计/24 会计师事务所业务质量管理/2.项目质量复核.md",
+    "cpa/审计/24 会计师事务所业务质量管理/1.会计师事务所质量管理体系.md",
+    "cpa/审计/24 会计师事务所业务质量管理/0.章首.md",
+    "cpa/审计/24 会计师事务所业务质量管理",
+    "cpa/审计/23 企业可持续信息鉴证/7.可持续信息鉴证业务的质量管理.md",
+    "cpa/审计/23 企业可持续信息鉴证/6.完成鉴证工作和出具鉴证报告.md",
+    "cpa/审计/23 企业可持续信息鉴证/5.应对重大错报风险.md",
+    "cpa/审计/23 企业可持续信息鉴证/4.风险评估.md",
+    "cpa/审计/23 企业可持续信息鉴证/3.计划鉴证工作.md",
+    "cpa/审计/23 企业可持续信息鉴证/2.可持续信息鉴证业务的承接与保持.md",
+    "cpa/审计/23 企业可持续信息鉴证/1.可持续信息鉴证业务概述.md",
+    "cpa/审计/23 企业可持续信息鉴证/0.章首.md",
+    "cpa/审计/23 企业可持续信息鉴证",
+    "cpa/审计/22 企业内部控制审计/9.完成内部控制审计工作.md",
+    "cpa/审计/22 企业内部控制审计/8.内部控制缺陷评价.md",
+    "cpa/审计/22 企业内部控制审计/7.信息技术控制的测试.md",
+    "cpa/审计/22 企业内部控制审计/6.业务流程、应用系统或交易层面的控制的测试.md",
+    "cpa/审计/22 企业内部控制审计/5.企业层面控制的测试.md",
+    "cpa/审计/22 企业内部控制审计/4.测试控制的有效性.md",
+    "cpa/审计/22 企业内部控制审计/3.自上而下的方法.md",
+    "cpa/审计/22 企业内部控制审计/2.计划内部控制审计工作.md",
+    "cpa/审计/22 企业内部控制审计/10.出具内部控制审计报告.md",
+    "cpa/审计/22 企业内部控制审计/1.内部控制审计的概念.md",
+    "cpa/审计/22 企业内部控制审计/0.章首.md",
+    "cpa/审计/22 企业内部控制审计",
+    "cpa/审计/21 审计工作底稿/3.审计工作底稿的归档.md",
+    "cpa/审计/21 审计工作底稿/2.审计工作底稿的格式、要素和范围.md",
+    "cpa/审计/21 审计工作底稿",
+    "cpa/审计/20 审计报告",
+    "cpa/审计/19 完成审计工作",
+    "cpa/审计/18 其他特殊项目的审计",
+    "cpa/审计/17 对集团财务报表审计的特殊考虑",
+    "cpa/审计/16 注册会计师利用他人的工作",
+    "cpa/审计/15 审计沟通"
   ]
 }
